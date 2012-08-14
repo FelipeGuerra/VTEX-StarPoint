@@ -1,0 +1,27 @@
+<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="~/arquivos/menu.js"></script>
+<script type="text/javascript" src="~/arquivos/functions.js"></script>
+<script type="text/javascript" src="~/arquivos/jquery.bgpos.js"></script>
+<script type="text/javascript" src="~/arquivos/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="~/arquivos/jquery.jcarousel.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+		$('#social #twitter a').mouseover(function(){
+				$(this).stop().animate({backgroundPosition:"(0 -39px)"}, {duration:500})
+			}).mouseout(function(){
+				$(this).stop().animate({backgroundPosition:"(0 0)"}, {duration:200, complete:function(){
+					$(this).css({backgroundPosition: "0 0"})
+				}})
+			});
+			
+		$('#social #facebook a').mouseover(function(){
+				$(this).stop().animate({backgroundPosition:"(0 -39px)"}, {duration:500})
+			}).mouseout(function(){
+				$(this).stop().animate({backgroundPosition:"(0 0)"}, {duration:200, complete:function(){
+					$(this).css({backgroundPosition: "0 0"})
+				}})
+			});
+		
+	});
+</script>

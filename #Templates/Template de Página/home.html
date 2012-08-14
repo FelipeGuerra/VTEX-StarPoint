@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+<title>Loja Modelo</title>
+<vtex:metaTags/>
+<link rel="stylesheet" type="text/css" href="~/arquivos/general.css" />
+
+<!--  SubTemplate: pngIeFix -->
+<vtex:template id="pngIeFix" />
+<!-- /SubTemplate: pngIeFix -->
+
+<vtex:template id="scripts" />
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+		$('#banner1').cycle({
+			fx:     'fade', 
+			speed:  'fast', 
+			timeout: 0, 
+			next:   '#topBanners #next2', 
+			prev:   '#topBanners #prev2'
+		});
+
+		$('#brands .box-banner').wrap('<li></li>');
+        
+    	jQuery('#brands ul').jcarousel({
+    		auto: 		0,
+    		scroll:		1,  
+    		animation:	"slow", 
+    		timeout: 	5000,
+    		wrap: 		'circular'
+    	});
+    });
+</script>
+
+</head>
+
+<body>
+
+<!--  SubTemplate: topBar -->
+<vtex:template id="topBar" />
+<!-- /SubTemplate: topBar -->
+
+<div id="container">
+	<div id="all">
+		<vtex:template id="header" />
+		<div id="topBanners">
+			<div id="prev2"></div>
+			<div id="next2"></div>
+			<div id="banner1"><vtex:contentPlaceHolder id="PHbanner1" /></div>
+			
+			<!-- /placeholders -->
+			<div id="topNewsletter">
+				<!--  Controle: Newsletter -->	
+				<vtex.cmc:newsletterOptIn />
+				<!-- /Controle: Newsletter -->	
+			</div>
+		</div>
+		<div id="brands">
+			<ul>
+				<vtex:contentPlaceHolder id="brands" />
+			</ul>
+			<!-- /SubTemplate: brands -->
+		</div>
+		<div id="sideBar">
+			
+			<div class="sideBarDepartmentNavigator">
+				<h2>Categorias</h2>
+				<vtex.cmc:departmentNavigator />
+			</div>
+			
+			<div id="lojasEsperiais">
+				<h3>Lojas Especiais</h3>
+				<ul>
+					<li><a href="/">StarPoint</a></li>
+					<li><a href="/">Vans</a></li>
+				</ul>
+			</div>
+			
+			<div id="brandsList"></div>
+			
+		</div>
+		
+		<div id="content">
+			<div id="collections">
+				<!--  placeholders -->
+				<div class="collectionWrap">
+					<div class="wrapVitrine">
+						<h3 class="title">OUTLET</h3>
+						<vtex:contentPlaceHolder id="CollectionOUTLET" />
+					</div>
+					
+					<div id="barra_atendimento_online">
+						<p>CONFIRA OFERTAS ACIMA | LOOKS EXCLUSIVOS ABAIXO  | Para falar conosco via CHAT AO VIVO, clique no botão ao LADO:</p>
+						<span class="btn_atendimento_online"><a href="">ATENDIMENTO ON LINE</a></span>
+					</div>
+					
+					<div class="wrapVitrine">
+						<h3 class="title">LOOKS EXCLUSIVOS</h3>
+						<vtex:contentPlaceHolder id="CollectionLOOKSEXCLUSIVOS" />
+					</div>
+					
+				</div>
+				<!-- /placeholders -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="bottomBar">
+	<vtex:template id="topBar" />
+</div>
+
+<vtex:template id="footer" />
+
+</body>
+</html>
