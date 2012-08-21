@@ -1,11 +1,12 @@
 /* Resets */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,legend{margin:0;padding:0;}
+*{margin:0 auto;padding:0;}
+/*body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,legend{margin:0;padding:0;}*/
 table{border-collapse:collapse;border-spacing:0;}
 fieldset-img{border:0;}
 address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
 ol,ul{list-style:none;}
 caption,th{text-align:left;}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+/*h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}*/
 q:before,q:after{content:'';}
 abbr,acronym{border:0;}
 hr{display:none;}
@@ -18,7 +19,7 @@ fieldset{border:none;}
 body{
 	font-family: 'Droid Sans', sans-serif;
 	font-size:11px;
-	line-height:1.5em;
+	/*line-height:1.5em;*/
 	background: url(/arquivos/bg_loja.png);
 }
 
@@ -75,6 +76,8 @@ a:hover{text-decoration:underline;}
 	padding: 4px 10px;
 	background: #FC0;
 	margin-left: 5px;
+	font-weight:bold;
+	color:#000;
 }
 
 #sideBar {
@@ -831,216 +834,11 @@ background-position: right bottom;
 .navigator ul,
 .navigator{margin-bottom:16px;}
 
-/* History */
-#history {
-	width: 982px;
-	margin: 0 auto;
-	clear: both;
-	overflow: hidden;
-}
-
-.historico-nav {
-	width: 760px;
-	float: left;
-	margin-left: 25px;
-	height: 90px;
-	margin-bottom: 30px;
-}
-
-#social {
-	margin: 0 0 0 10px;
-	float: right;
-}
-
-#social h3 {
-	font-weight: bold;
-}
-
-#social div a{
-	width: 38px;
-	display:block;
-	height: 38px;
-	float: left;
-	margin-right: 10px;
-}
-
-#social #facebook a{
-	background: url(/arquivos/sprite_social.png) 0 0 no-repeat;
-	-webkit-transition: .2s ease-out;
-	-moz-transition: .2s ease-out;
-	transition: .2s ease-out;
-}
-
-#social #facebook a:hover{
-	background: url(/arquivos/sprite_social.png) 0 -39px no-repeat;
-}
-
-#social #twitter a{
-	background: url(/arquivos/sprite_social.png) -39px 0 no-repeat;
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	transition: .3s;
-}
-
-#social #twitter a:hover{
-	background: url(/arquivos/sprite_social.png) -39px -39px no-repeat;
-}
-
 /**/
 
 #pLimparHistorico{margin:15px 0 0 24px;}
 #ulUltimosProdutos{margin:5px 0 0 24px;}
 
-/* Footer */
-
-#bottomBar {
-	float: left;
-	width: 100%;
-}
-
-#bottomBar #topBar {
-	height: 20px;
-}
-
-#bottomBar #topBar ul {
-	padding: 0;
-	margin: 3px 0 0 0;
-}
-
-#containerFooter {
-	float: left;
-	width: 100%;
-	background: white;
-}
-
-#footer {
-	clear: both;
-	overflow: auto;
-	margin: 0 auto;
-	margin-top: 35px;
-	width: 982px;
-	clear: both;
-}
-.home #footer{padding-top:0;}
-
-#footer h2, #history h3 {
-	background: none;
-	font-size: 13px;
-	padding: 8px 0 8px 0;
-}
-
-#footer h2 span{display:none;}
-#footer h3,
-#history h4{font-size: 11px;font-weight:700;margin-bottom:5px;}
-
-#HistoricoVazio {
-	padding-left: 10px;
-}
-
-#footer h3 {
-	text-transform: uppercase;
-}
-
-#footer .itemGroup {
-	display: inline;
-	float: left;
-	margin: 5px 0;
-	text-transform: uppercase;
-	font-size: 11px;
-}
-
-#footerVipClub div {
-	width: 211px;
-	height: 55px;
-	background: url('/arquivos/sprite_footer.png') no-repeat -116px 0;
-	float: left;
-}
-
-#footerPagamento div {
-	background: url('/arquivos/sprite_footer.png') no-repeat 0 -62px;
-	width: 260px;
-	height: 93px;
-}
-
-#footer .columnList a{line-height:1.8em;}
-
-#footerServices {
-	width: 235px;
-	margin-left: 25px!important;
-}
-
-#footerInstitutional{width: 215px;}
-#footerVipClub{width: 245px;}
-
-.department #footerNewsletter{display:none;}
-.department #footerNews{width:390px;}
-
-#network li{float:left;}
-#network a{display:block;height:31px;margin-right:5px;width:30px;}
-#ntBlog{background-position:0 -150px;}
-#ntTwitter{background-position:-30px -150px;}
-#ntYoutube{background-position:-60px -150px;}
-#ntFacebook{background-position:-90px -150px;}
-
-#footer #footerNewsletter{float:right;margin-left:0;margin-right:5px;width:159px;}
-#footerNewsletter input{margin-top:3px;width:155px;}
-#footerNewsletter p:after{content:':';}
-#footerNewsletter p span{display:none;}
-#footerNewsletter p span.subTitle{display:inline;text-transform:capitalize;}
-#footerNewsletter .btn-ok{float:right;margin-right:2px;width:auto;}
-
-#containerCredits {
-	width: 100%;
-	height:45px;
-	float: left;
-	background:#e1e1e1;
-}
-
-
-#footerSearch{padding:15px 23px 13px 11px;}
-
-
-#footerCredits {
-	font-size: 10px;
-	margin: 0 auto;
-	width: 982px;
-	padding-top: 8px;
-	position: relative;
-}
-
-#footerCredits p {
-	width: 590px;
-}
-
-#footerCredits div {
-	position: absolute;
-	top: 9px;
-}
-
-
-#logoVtex a{
-	width:93px;
-	height:35px;
-	background:url(/arquivos/sprite_logos.png) no-repeat top left;
-	display:block;
-}
-
-#logoCookie a {
-	width: 115px;
-	height: 35px;
-	background: url(/arquivos/sprite_logos.png) no-repeat top right;
-	display: block;
-}
-
-
-
-#logoVtex {
-	right: 125px;
-}
-
-#logoCookie {
-	right: 0;
-}
 
 /* Department Navigator */
 
@@ -1322,26 +1120,37 @@ h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transf
 	font-weight: normal;
 }
 
-.historico-nav,
-historico-nav *{
-	margin: 0;
-	padding: 0;
-	width: auto;
-	height: auto;
-	overflow: hidden;
-}
 
-.historico-nav{
-	width: 860px;
-}
 
-.historico-nav .last-seen{
-	width: 345px;
-	float: left;
-}
 
-.historico-nav h4{
-	font-size: 12px;
-	text-transform: uppercase;
-}
 
+/* ______ FOOTER ______ */
+
+.footer{font-family: 'Droid Sans', sans-serif;background: url(/arquivos/footer_fundo.jpg) repeat-x top left;height:394px;width:100%;margin-top:20px;clear:both;}
+.footer #barra_info{color: #FFFFFF;font-size: 11px;font-weight: bold;padding-top: 2px;text-align: center;width: 982px;height:17px;}
+.footer #containerFooter{width:980px;padding-top:5px;}
+.footer #history{float:left;width:715px;margin-left:32px;font-size:11px;color:#000;text-transform:uppercase;}
+.footer #history #HistoricoVazio{margin-top:5px;}
+.footer #social{float:right;width:86px;margin-right:124px;margin-top:34px;}
+.footer #social h3, .footer #footerServices h3, .footer #footerInstitutional h3, .footer #footerVipClub h3, .footer #footerPagamento h3, .footer #history h3{font-size: 11px;color:#000;font-weight:bold;text-transform:uppercase;}
+.footer #social #twitter{background: url(/arquivos/sprite_social.png) -39px 0 no-repeat;-webkit-transition: .2s;-moz-transition: .2s;transition: .2s;height:38px;width:38px;float:left;margin-top:15px;}
+.footer #social #twitter:hover{background: url(/arquivos/sprite_social.png) -39px -39px no-repeat;}
+.footer #social #facebook{background: url(/arquivos/sprite_social.png) 0 0 no-repeat;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;height:38px;width:38px;float:right;margin-top:15px;}
+.footer #social #facebook:hover{background: url(/arquivos/sprite_social.png) 0 -39px no-repeat;}
+.footer #social a{text-decoration:none;}
+.footer #footer{clear: both;float: left;margin-top: 40px;margin-left:32px;width: 100%;}
+.footer #footerServices{float:left;margin-right:36px;}
+.footer #footerInstitutional{float:left;margin-right:48px;}
+.footer #footerServices ul, .footer #footerInstitutional ul{margin-top:3px;}
+.footer #footerServices ul li, .footer #footerInstitutional ul li{text-transform:uppercase;font-size:11px;color:#000;margin:2px 0;float:left;clear:both;}
+.footer #footerInstitutional a, .footer #footerServices a{color:#000;text-decoration:none;text-transform:uppercase;font-size:11px;}
+.footer #footerInstitutional a:hover, .footer #footerServices a:hover{text-decoration:underline;}
+.footer #footerVipClub{float:left;margin-right:55px;}
+.footer #footerVipClub div{background: url(/arquivos/sprite_footer.png) no-repeat scroll right top transparent;height: 50px;width: 195px;margin-top:3px;}
+.footer #footerPagamento{float:left;}
+.footer #footerPagamento div{background: url(/arquivos/sprite_footer.png) no-repeat scroll left bottom transparent;height: 97px;width: 260px;margin-top:15px;}
+.footer #containerCredits{clear: both;float: left;margin-top: 17px;width: 100%;height:39px;}
+.footer #footerCredits{position: relative;}
+.footer #footerCredits p{clear: both;float: left;margin-left:36px;}
+.footer #logoVtex{background: url(/arquivos/sprite_logos.png) no-repeat scroll left top transparent;float: right;height: 35px;position: absolute;right: 116px;top: 0;width: 100px;}
+.footer #logoCookie{background: url(/arquivos/sprite_logos.png) no-repeat scroll right top transparent;float: right;height: 35px;position: absolute;right: 0;top: 0;width: 113px;}
