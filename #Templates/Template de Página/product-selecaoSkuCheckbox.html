@@ -1,112 +1,171 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 <head>
-<title>Loja Modelo</title>
-<vtex:metaTags/>
-<link rel="stylesheet" type="text/css" href="~/arquivos/general.css" />
-<link rel="stylesheet" type="text/css" href="~/arquivos/product.css" />
-<link rel="stylesheet" type="text/css" href="~/arquivos/thickbox.css" />
-<script type="text/javascript" src="~/arquivos/menu.js"></script>
-<vtex:template id="pngIeFix" />
+	<title>Loja Modelo</title>
+	<vtex:metaTags/>
+	<link rel="stylesheet" type="text/css" href="~/arquivos/general.css" />
+	
+	<!--  SubTemplate: pngIeFix -->
+	<vtex:template id="pngIeFix" />
+	<!-- /SubTemplate: pngIeFix -->
+	
+	<vtex:template id="scripts" />
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#banner1').cycle({
+				fx:     'fade', 
+				speed:  'fast', 
+				timeout: 0, 
+				next:   '#topBanners #next2', 
+				prev:   '#topBanners #prev2'
+			});
+	
+			$('#brands .box-banner').wrap('<li></li>');
+			
+			jQuery('#brands ul').jcarousel({
+				auto: 		0,
+				scroll:		1,
+				animation:	"slow",
+				timeout: 	5000,
+				wrap: 		'circular'
+			});
+			
+			// marcar / desmarcar sku selecionado
+			var changeSku = function(){
+				var inputs = $( ".sku-selector" ),
+					labels = inputs.next( "label" );
+				
+				inputs.bind( "change" , function() {
+					labels.removeClass( "sku-picked" );
+					$( this ).filter( ":checked" ).next( "label" ).addClass( "sku-picked" );
+				});
+			}
+			changeSku();
+		});
+	</script>
 </head>
 
-<body id="produto">
+<body>
 
 <!--  SubTemplate: topBar -->
 <vtex:template id="topBar" />
 <!-- /SubTemplate: topBar -->
 
-<div id="all">
-	<!--  SubTemplate: header -->
-	<vtex:template id="header" />
-	<!-- /SubTemplate: header -->
-	
-	<div id="sideBar">
-		<!--  Controle: imagem do produto -->
-		<vtex.cmc:ProductImage />
-		<!-- /Controle: imagem do produto -->
-	</div>
-	
-	<div id="content">
-		<!--  Controle: nome do produto -->
-		<h1><vtex.cmc:productName /></h1>
-		<!-- /Controle: nome do produto -->
+<div id="container">
+	<div class="all">
+		<!--  SubTemplate: header -->
+		<vtex:template id="header" />
+		<!-- /SubTemplate: header -->
 		
-		<!--  Controle: botao comprar -->
-		<vtex.cmc:BuyButton />
-		<!-- /Controle: botao comprar -->
+		<vtex.cmc:breadCrumb />
 		
-		<!--  Controle: breve descricao do produto -->
-		<vtex.cmc:productDescriptionShort />
-		<!-- /Controle: breve descricao do produto -->
-		
-		<!--  Controle: flags -->
-		<div id="flags"><vtex.cmc:hightLight /></div>
-		<!-- /Controle: flags -->
-		
-		<!--  Controle: seletor de sku -->
-                <vtex.cmc:skuRichSelection changeImage="1" />
-		<!-- /Controle: seletor de sku -->
-
-		<!--  Controle: preco do produto -->
-		<div id="productPrice"><vtex.cmc:skuPrice /></div>
-		<!-- /Controle: preco do produto -->
-		
-		<!--  Controle: formas de pagamento -->
-		<div id="productPayment"><vtex.cmc:OtherPaymentMethod/></div>
-		<!-- /Controle: formas de pagamento -->
-		
-		<!--  Controle: calcular frete -->
-		<vtex.cmc:shippingValue />
-		<!-- /Controle: calcular frete -->
-		
-		<!--  Controle: lista -->
-		<div id="productList" class="toRight"><vtex.cmc:giftListInsertSku /></div>
-		<!-- /Controle: lista -->
-
-		<!--  Controle: indicar a amigo -->
-		<div id="productRefer" class="toRight"><vtex.cmc:referAFriend /></div>
-		<!-- /Controle: indicar a amigo -->
-		
-		<!--  Controle: disponibilidade -->
-		<vtex.cmc:Delivery />
-		<!-- /Controle: disponibilidade -->
-		
-		<!--  Controle: servicos -->
-		<vtex.cmc:stockKeepingUnitService />
-		<!-- /Controle: servicos -->
-		
-		<!--  Controle: descricao do produto -->
-		<div id="productDescription">
-			<h2 class="title">Descri��o do Produto</h2>
-			<vtex.cmc:ProductDescription />
+		<div class="container">
+			<div class="box-left">
+				<vtex.cmc:ProductImage/>
+			</div>
+			
+			<div class="box-right">
+				<div class="box">
+					<vtex.cmc:brandName/>
+					<!--  Controle: nome do produto -->
+					<h1><vtex.cmc:productName /></h1>
+					<!-- /Controle: nome do produto -->
+					
+					<div class="line">
+						<vtex.cmc:productReference/>
+						<!--  Controle: preco do produto -->
+						<div id="productPrice"><vtex.cmc:skuPrice /></div>
+						<!-- /Controle: preco do produto -->
+						
+						<vtex:contentPlaceHolder id="frete-gratis" />
+					</div>
+					
+					<!--  Controle: seletor de sku -->
+					<vtex.cmc:skuRichSelection changeImage="1" />
+					<!-- /Controle: seletor de sku -->
+					
+					<!--  Controle: botao comprar -->
+					<vtex.cmc:BuyButton />
+					<!-- /Controle: botao comprar -->
+				</div>
+				
+				<div class="box">
+					<div class="line">
+						<div class="box-twitter">
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="pt" data-dnt="true">Tweetar</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+						
+						<div class="box-pinterest">
+							<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+						</div>
+						
+						<div class="box-facebook">
+							<vtex.cmc:facebookLike />
+						</div>
+						
+						<div class="box-gPlus">
+							<!-- Place this tag after the last +1 button tag. -->
+							<script type="text/javascript">
+							  (function() {
+								var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+								po.src = 'https://apis.google.com/js/plusone.js';
+								var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+							  })();
+							</script>
+						</div>
+					</div>
+					
+					<div class="line">
+						<ul id="tabs">
+							<li class="active">DESCRIÇÃO</li>
+							<li>AVALIAÇÕES</li>
+							<li>VIDEO</li>
+							<li><vtex.cmc:evaluationRate/></li>
+						</ul>
+						
+						<div class="tabs">
+							<div id="tab-1" class="tab active">
+								<vtex.cmc:ProductDescription/>
+							</div>
+							
+							<div id="tab-2" class="tab">
+								<vtex.cmc:UserReview/>
+							</div>
+							
+							<div id="tab-3" class="tab">
+								video >
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!-- /Controle: descricao do produto -->
-
-		<!--  Controle: especificacao do produto -->
-		<vtex.cmc:productSpecification />
-		<!-- /Controle: especificacao do produto -->
 		
-		<!--  Controle: compre junto -->
-		<vtex.cmc:BuyTogether/>
-		<!-- /Controle: compre junto -->
-		
-		<div id="collections" class="vitrine">
-			<!--  placeholders -->
-			<vtex:contentPlaceHolder id="PHrecomendamos" />
-			<vtex:contentPlaceHolder id="PHrelacionados" />
-			<!-- /placeholders -->
+		<div class="container box">
+			<h2 class="title-box">Complete seu look</h2>
+			<vtex:contentPlaceHolder id="Similares" />
 		</div>
-
-		<!--  Controle: avaliacao do cliente -->
-		<vtex.cmc:UserReview />
-		<!-- /Controle: avaliacao do cliente -->
+		
+		<div class="container">
+			<vtex.cmc:BuyTogether/>
+		</div>
+		
+		<div id="brands">
+			<ul>
+				<vtex:contentPlaceHolder id="brands" />
+			</ul>
+			<!-- /SubTemplate: brands -->
+		</div>
 	</div>
-
-	<!--  SubTemplate: footer -->
-	<vtex:template id="footer" />
-	<!-- /SubTemplate: footer -->
 </div>
+
+<div id="bottomBar">
+	<vtex:template id="topBar" />
+</div>
+
+<vtex:template id="footer" />
 
 </body>
 </html>

@@ -49,7 +49,7 @@ a:hover{text-decoration:underline;}
 	margin-bottom: 10px;
 }
 
-#content{float:right;padding-bottom:34px;position:relative;width:790px;}
+#content{float:right;padding-bottom:34px;position:relative;width:776px;overflow: hidden}
 #sideBar{float:left;margin-left:8px;width:166px;}
 
 .home #content{float:left;width: 775px;}
@@ -77,7 +77,7 @@ a:hover{text-decoration:underline;}
 	margin-left: 5px;
 }
 
-.home #sideBar {
+#sideBar {
 	float: left;
 	margin: 0 10px 0 0;
 	background: #fff;
@@ -197,6 +197,7 @@ a:hover{text-decoration:underline;}
 #header{position:relative;background: #fff;height: 110px;}
 
 h1#title {
+
 	float: left;
 }
 
@@ -428,8 +429,11 @@ ul#conta li.first {
 .ui-autocomplete img{margin-right:5px;vertical-align:middle;}
 
 /* Banners and newsletter */
-.home #topBanners {
+#topBanners {
 	margin-top: 0;
+	width: auto;
+	height: auto;
+	overflow: hidden;
 	position: relative;
 }
 #bottomBanners{margin-top:18px;overflow:auto;_height:1%;}
@@ -438,6 +442,7 @@ ul#conta li.first {
 
 /* Brands */
 #brands {
+	margin: 10px 0 0;
 	width: 982px;
 	float: left;
 	height: 75px;
@@ -525,10 +530,66 @@ ul#conta li.first {
 background-position: right bottom;
 }
 
+/**/
+
+#topBanners #prev,
+#topBanners #next{
+	padding: 0 5px;
+	width: 23px;
+	height: 100%;
+	overflow: hidden;
+	background: rgba( 0, 0, 0, .3 );
+	position: absolute;
+	top: 0;
+	z-index: 100000;
+	cursor:pointer;
+}
+
+#topBanners #prev{
+	left: 0;
+}
+
+#topBanners #next{
+	right: 0;
+}
+
+#topBanners #prev:hover,
+#topBanners #next:hover{
+	background: rgba( 0, 0, 0, .5 );
+}
+
+#topBanners #prev span,
+#topBanners #next span{
+	margin-top: -11px;
+	display: block;
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: 50%;
+}
+
+#topBanners #prev span{
+	background: url(arrow-rotator-internal.png) left top no-repeat;
+}
+
+#topBanners #prev:hover span{
+	background: url(arrow-rotator-internal.png) left bottom no-repeat;
+}
+
+#topBanners #next span{
+	background: url(arrow-rotator-internal.png) right top no-repeat;
+}
+
+#topBanners #next:hover span{
+	background: url(arrow-rotator-internal.png) right bottom no-repeat;
+}
+
+/**/
+
 #topNewsletter {
 	float: left;
 	width: 982px;
-	margin: 10px 0;
+	margin: 10px 0 0;
 }
 
 #banner1{float:left;}
@@ -541,7 +602,7 @@ background-position: right bottom;
 #banner6{padding:6px 0 2px;}
 #banner6 img{margin:0 auto;}
 
-#topNewsletter {
+#topNewsletter{
 	background: url(/arquivos/bg_newsletter.jpg);
 }
 
@@ -586,6 +647,75 @@ background-position: right bottom;
 
 /* Collections */
 
+.searchResultsTime{
+	display: none;
+}
+
+.resultado-busca-filtro fieldset{
+	margin-right: 35px;
+	float: left;
+}
+
+.orderBy label{
+	margin-right: 2px;
+	text-transform: uppercase;
+}
+
+.orderBy select{
+	border-radius: 3px;
+	border: 1px solid #e3e9ef;
+	border-top-color: #abadb3;
+}
+
+.filterBy select{
+	border: none;
+}
+
+.compare{
+	display: none;
+}
+
+.pages{
+	overflow: hidden;
+}
+
+.pager.top .pages{
+	top: 10px;
+	right: 30px;
+	position: absolute;
+}
+
+.pager.bottom{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.pager li{
+	margin: 0 2px;
+	padding: 0 3px;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.pager .pgCurrent{
+	background: #fff;
+}
+
+.sub{
+	padding: 10px 30px;
+	background: #fff;
+}
+
+
+
+
+
+
+
+
 .prateleira .prateleira{border:none;}
 #collections{position:relative;width:100%;}
 
@@ -624,7 +754,7 @@ background-position: right bottom;
 }
 
 
-.vitrine li {
+.prateleira li {
 	width: 175px;
 	float: left;
 	text-align: center;
@@ -667,12 +797,11 @@ background-position: right bottom;
 
 
 /* Pager */
-.pager{clear:both;overflow:auto;_height:1%;}
-.pager ul{background:#eae9e8;float:right;padding:2px 5px;}
-.pager li{cursor:pointer;float:left;padding:1px 7px 2px;}
+.pager{clear:both;overflow: hidden;}
+.pager ul{background:#eae9e8;float:left;padding:2px 5px;}
+.pager li{cursor:pointer;float:left;}
 
-.resultado-busca-filtro{overflow:hidden;margin:8px 0;}
-.resultado-busca-filtro fieldset,
+.resultado-busca-filtro{overflow:hidden;}
 .resultado-busca-filtro p{float:left;margin-right:20px;}
 .btn-comparar{margin-left:15px;}
 
@@ -684,7 +813,6 @@ background-position: right bottom;
 
 /* sideBar */
 #sideBar h2,
-.navigator h3,
 .navigator h5{
     background: url(/arquivos/bg_titles.png);
     padding: 15px;
@@ -708,6 +836,7 @@ background-position: right bottom;
 	width: 982px;
 	margin: 0 auto;
 	clear: both;
+	overflow: hidden;
 }
 
 .historico-nav {
@@ -719,8 +848,8 @@ background-position: right bottom;
 }
 
 #social {
-	float: left;
-	margin-left: 10px;
+	margin: 0 0 0 10px;
+	float: right;
 }
 
 #social h3 {
@@ -735,15 +864,29 @@ background-position: right bottom;
 	margin-right: 10px;
 }
 
-#social #twitter a{
-	background: url(/arquivos/sprite_twitter.png) no-repeat 0 0;
-	background-position: 0 0;
+#social #facebook a{
+	background: url(/arquivos/sprite_social.png) 0 0 no-repeat;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	transition: .2s ease-out;
 }
 
-#social #facebook a{
-	background: url(/arquivos/sprite_facebook.png) no-repeat 0 0;
-	background-position: 0 0;
+#social #facebook a:hover{
+	background: url(/arquivos/sprite_social.png) 0 -39px no-repeat;
 }
+
+#social #twitter a{
+	background: url(/arquivos/sprite_social.png) -39px 0 no-repeat;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+}
+
+#social #twitter a:hover{
+	background: url(/arquivos/sprite_social.png) -39px -39px no-repeat;
+}
+
+/**/
 
 #pLimparHistorico{margin:15px 0 0 24px;}
 #ulUltimosProdutos{margin:5px 0 0 24px;}
@@ -774,7 +917,9 @@ background-position: right bottom;
 	clear: both;
 	overflow: auto;
 	margin: 0 auto;
+	margin-top: 35px;
 	width: 982px;
+	clear: both;
 }
 .home #footer{padding-top:0;}
 
@@ -853,6 +998,8 @@ background-position: right bottom;
 
 
 #footerSearch{padding:15px 23px 13px 11px;}
+
+
 #footerCredits {
 	font-size: 10px;
 	margin: 0 auto;
@@ -860,6 +1007,16 @@ background-position: right bottom;
 	padding-top: 8px;
 	position: relative;
 }
+
+#footerCredits p {
+	width: 590px;
+}
+
+#footerCredits div {
+	position: absolute;
+	top: 9px;
+}
+
 
 #logoVtex a{
 	width:93px;
@@ -875,14 +1032,7 @@ background-position: right bottom;
 	display: block;
 }
 
-#footerCredits p {
-	width: 590px;
-}
 
-#footerCredits div {
-	position: absolute;
-	top: 9px;
-}
 
 #logoVtex {
 	right: 125px;
@@ -917,3 +1067,281 @@ h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transf
 #storeMonte a{background-position:0 -80px;height:29px;width:51px;}
 #storeLouis a{background-position:0 -120px;height:11px;width:98px;}
 #storeYves a{background-position:0 -160px;height:20px;width:99px;}
+
+/* product-selecaoSkuCheckbox */
+
+.all .container,
+.all .container .box,
+.all .container .line{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.all .container,
+.all .container .box{
+	margin-bottom: 10px;
+}
+
+.all .container .box-left{
+	padding: 10px;
+	width: 420px;
+	height: auto;
+	overflow: hidden;
+	background: #fff;
+	float: left;
+}
+
+.all .container .box-left img{
+	display: block;
+	max-width: 100%;
+}
+
+.all .container #include img{
+	margin: auto;
+}
+
+.all .container .box-left .thumbs{
+	margin: 10px 20px 0 20px;
+	overflow: hidden;
+}
+
+.all .container .box-left .thumbs img{
+	margin: 0 5px;
+	width: 83px;
+	border: 1px solid #ccc;
+	float: left;
+}
+
+/**/
+
+.all .container .box-right{
+	width: 530px;
+	height: auto;
+	overflow: hidden;
+	float: right;
+}
+
+/**/
+
+.all .container .box{
+	padding: 10px;
+	background: #fff;
+}
+
+.all .container .box .brandName,
+.all .container .box h1{
+	display: block;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.all .container .box h1{
+	margin-bottom: 25px;
+	
+	font-size: 18px;
+}
+
+.all .container .box .box-banner{
+	padding: 4px 0;
+	background: #ebebeb;
+	float: right;
+}
+
+#productPrice{
+	padding: 10px;
+	width: 306px;
+	overflow: hidden;
+	background: #ebebeb;
+	float: left;
+}
+
+.economia-de{
+	display: none;
+}
+
+.valor-de{
+	height: 1px;
+	overflow: hidden;
+}
+
+.valor-por strong{
+	font-size: 24px;
+	color: #bababa;
+}
+
+.valor-dividido strong{
+	font-size: 24px;
+	color: #646464;
+}
+
+.topic{
+	margin-top: 10px;
+	padding: 5px;
+	overflow: hidden;
+	background: #ebebeb;
+}
+
+.topic.Cor{
+	display: none;
+}
+
+.topic .specification{
+	font-size: 12px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.topic input{
+	visibility: hidden;
+}
+
+.topic label{
+	padding: 3px 15px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.buy-button{
+	margin-top: 10px;
+	height: 42px;
+	background: url(/arquivos/btn-buy.jpg) center no-repeat;
+	background-color: #4ccc00;
+	
+	text-indent: -999px;
+}
+
+/* */
+
+.line .box-twitter,
+.line .box-pinterest,
+.line .box-facebook,
+.line .box-gPlus{
+	width: 127px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+}
+
+.line #tabs,
+.line #tabs li{
+	display: block;
+	width: auto;
+	height: auto;
+	
+}
+
+.line #tabs{
+	margin-top: 10px;
+}
+
+.line #tabs{
+	z-index: 5;
+	height: 21px;
+}
+
+.line #tabs li{
+	margin: 0 2px 2px 0;
+	padding: 2px 5px;
+	overflow: hidden;
+	background: #ebebeb;
+	float: left;
+	cursor: pointer;
+	
+	font-size: 12px;
+}
+
+.line #tabs li:last-child{
+	cursor: default;
+}
+
+.line #tabs li.active{
+	margin: 1px 2px 0 0;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	background: #fff;
+}
+
+.line .tabs .tab{
+	display: none;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.line .tabs .tab.active{
+	display: block;
+}
+
+.container .prateleira{
+	padding: 10px;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.container.box{
+	background: #fff;
+}
+
+.container.box h2{
+	margin: 10px 10px 0;
+	padding: 8px 15px;
+	background: url(/arquivos/bg-h2-title.jpg) center repeat;
+	
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+}
+
+.bread-crumb,
+.bread-crumb ul,
+.bread-crumb li
+.bread-crumb a{
+	display: block;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.bread-crumb{
+	margin: 10px 0;
+}
+
+.bread-crumb li{
+	padding: 2px 5px;
+	background: #e1e1e1;
+	float: left;
+}
+
+.bread-crumb a{	
+	font-size: 16px;
+	color: #000;
+	text-transform: capitalize;
+	font-weight: normal;
+}
+
+.historico-nav,
+historico-nav *{
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.historico-nav{
+	width: 860px;
+}
+
+.historico-nav .last-seen{
+	width: 345px;
+	float: left;
+}
+
+.historico-nav h4{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+	<title>Loja Modelo</title>
+	<vtex:metaTags/>
+	<link rel="stylesheet" type="text/css" href="~/arquivos/general.css" />
+	
+	<!--  SubTemplate: pngIeFix -->
+	<vtex:template id="pngIeFix" />
+	<!-- /SubTemplate: pngIeFix -->
+	
+	<vtex:template id="scripts" />
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#banner1').cycle({
+				fx:     'fade', 
+				speed:  'fast', 
+				timeout: 0, 
+				next:   '#topBanners #next2', 
+				prev:   '#topBanners #prev2'
+			});
+	
+			$('#brands .box-banner').wrap('<li></li>');
+			
+			jQuery('#brands ul').jcarousel({
+				auto: 		0,
+				scroll:		1,
+				animation:	"slow",
+				timeout: 	5000,
+				wrap: 		'circular'
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+<!--  SubTemplate: topBar -->
+<vtex:template id="topBar" />
+<!-- /SubTemplate: topBar -->
+
+<div id="container">
+    <div id="all">
+		<!--  SubTemplate: header -->
+		<vtex:template id="header" />
+		<!-- /SubTemplate: header -->
+		
+		<div id="brands">
+			<ul>
+				<vtex:contentPlaceHolder id="brands" />
+			</ul>
+			<!-- /SubTemplate: brands -->
+		</div>
+		
+		<div id="sideBar">
+			<div id="departmentNavigator" class="navigator">
+				<h2>Categorias</h2>
+				<!--  Controle: navegador de departamento -->
+				<vtex.cmc:departmentNavigator/> 
+				<!-- /Controle: navegador de departamento -->
+			</div>
+			
+			<!--  SubTemplate: hotsites -->
+			<vtex:template id="hotsites" />
+			<!-- /SubTemplate: hotsites -->
+		</div>
+		
+		<div id="content">
+			<div id="topBanners">
+				<div id="prev">
+					<span></span>
+				</div>
+				<div id="next">
+					<span></span>
+				</div>
+				
+				<div id="banner1">
+					<vtex:contentPlaceHolder id="PHbanner1" />
+				</div>
+			</div>
+						
+			<div id="collections">
+				<div class="collectionWrap">
+					<!--  Controle: Resultado da busca / Lista de produtos -->
+					<vtex.cmc:searchResult layout="85e23371-f0a2-43c2-a6ac-e5464c462fb3" itemCount="16" columnCount="4" />
+					<!--  /Controle: Resultado da busca / Lista de produtos -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="bottomBar">
+	<vtex:template id="topBar" />
+</div>
+
+<vtex:template id="footer" />
+
+</body>
+</html>

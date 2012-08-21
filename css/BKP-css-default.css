@@ -1,0 +1,1481 @@
+
+html{
+	background: url(/arquivos/bg_loja.png) center repeat;
+}
+
+body{
+	font-family: 'Droid Sans', sans-serif;
+	font-size:11px;
+	line-height:1.5em;
+	background: url(/arquivos/bg-body.jpg) center bottom repeat-x;
+	width: 100%;
+	float: left;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, legend {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset-img {
+    border: 0 none;
+}
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+ol, ul {
+    list-style: none outside none;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before, q:after {
+    content: "";
+}
+abbr, acronym {
+    border: 0 none;
+}
+hr {
+    display: none;
+}
+img {
+    border: medium none;
+}
+em {
+    font-style: normal;
+}
+fieldset {
+    border: medium none;
+}
+body, input, select, textarea {
+    color: #333333;
+    
+}
+input, select, textarea {
+    border: 1px solid #999999;
+    font-size: 10px;
+    padding: 1px 2px;
+}
+select {
+    padding: 0;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.loginmsg a, #footer h2, .order-number strong, .minha-conta .nav h3, .minha-conta .abas .ativo a, .informacoes-conta h3 {
+    color: #195073;
+}
+h1 a, #footerNews h3, #network a, #footer h2 {
+   
+    background-repeat: no-repeat;
+}
+.imgRp {
+    display: block;
+    text-indent: -999em;
+}
+.bt {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+.content .bt {
+    font-size: 11px;
+    line-height: 1.6em;
+}
+.bts span, .bts li {
+    float: left;
+    margin-right: 10px;
+}
+.history, .bottomSearchWrapper {
+    display: none;
+}
+#aspnetForm {
+    margin: 0 auto;
+    position: relative;
+    width: 986px;
+}
+
+#divMenuUsuario {
+    display: none;
+}
+.header div div {
+    font-size: 10px;
+    overflow: auto;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+}
+.header div div div {
+    overflow: auto;
+    padding-top: 2px;
+}
+.header div div .ajax-content-loader, .header div div .ajax-content-loader div {
+    color: #999999;
+    float: left;
+    padding-top: 0;
+    width: auto;
+}
+.header div div p {
+    color: #999999;
+    float: left;
+}
+.header div div p, .header div div .ajax-content-loader div {
+    margin-left: 12px;
+}
+.header div div p a, .header div div .ajax-content-loader a {
+    margin-left: 4px;
+    text-decoration: underline;
+}
+.header strong {
+    font-weight: normal;
+}
+.servicos {
+    font-size: 10px;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+.servicos li {
+    float: left;
+}
+
+.servicos li a,
+.servicos li span {
+    color: #333;
+/*    padding: 0 7px;*/
+	font-size: 11px !important;
+}
+
+.servicos li.last a {
+    background: none repeat scroll 0 0 transparent;
+}
+h1 {
+    
+    overflow: hidden;
+}
+h1 a {
+    background: url(/arquivos/logo_star_point.png) no-repeat top center;
+	color: black;
+	float: left;
+	height: 73px;
+	margin: 10px 25px 25px 20px;
+	width: 279px;
+}
+h1 a:hover {
+    text-decoration: none;
+}
+.header .menuwrap {
+    clear: both;
+    font-size: 11px;
+    overflow: auto;
+    position: static;
+}
+
+/**/
+
+#menu01 {
+	clear: both;
+	/*position: absolute;*/
+	width: 581px;
+	top: -30px;
+	right: 20px;
+	height: 25px;
+	float: right;
+}
+
+#menu01 li{
+	float: left;
+    height: auto;
+    overflow: hidden;
+    padding: 5px 0 5px 10px;
+    width: auto;
+}
+
+#menu01 li a{
+	padding-right: 10px;
+	color: #000;
+	font-weight: bold;
+	border-right: 1px solid #000;
+}
+
+#menu01 li.menu-outlet a{
+	border: none;
+}
+
+#menu01 li a:hover{
+	text-decoration: none;
+}
+
+#menu01 li:hover{
+	background: black;
+}
+
+#menu01 li:hover a{
+	color: #fcd300;
+}
+
+/**/
+
+.searchWrapper {
+	padding: 2px;
+    position: absolute;
+    top: -63px;
+	left: 502px;
+	background: #000;
+}
+
+#ctl00_BuscaTxt_Top_ctrBuscaTxt_txtBusca{
+	margin: 0 -1px 0 0;
+	padding: 3px 5px;
+    width: 160px;
+	border: none;
+	float: left;
+}
+
+#ctl00_BuscaTxt_Top_ctrBuscaTxt_btnOK{
+	margin: 0;
+    display: block;
+    width: 19px;
+	height: 19px;
+	border: none;
+	background: url(/arquivos/btn_search.png) center no-repeat;
+	background-color: #ffd700;
+	float: left;
+	
+	text-indent: -9999px;
+}
+
+
+.search select {
+    margin-left: 8px;
+}
+.search legend {
+    display: none;
+}
+.search label {
+    color: #7A7A7A;
+    float: left;
+    font-size: 10px;
+    font-weight: 700;
+}
+.search .fitext {
+    margin: 0 4px 0 2px;
+    width: 216px;
+}
+.content h2, .minha-conta .area-3-2-3 h3 {
+    color: #353535;
+    font-size: 27px;
+    line-height: 1.5em;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+#footer {
+	margin-top: 20px;
+    clear: both;
+    font-size: 10px;
+    margin: 34px 0 5px 8px;
+    overflow: auto;
+    padding: 57px 5px 0 0;
+}
+
+.footer{
+	margin-top: 37px;
+}
+
+.mainContentWrapper .footer{
+	margin-top: 17px !important;
+	float: left;
+}
+
+.home #footer {
+    padding-top: 0;
+}
+#footer h2 {
+    background-position: 0 -300px;
+    border-bottom: 1px solid #195073;
+    font-size: 15px;
+    padding: 8px 0 8px 23px;
+}
+#footer h2 span {
+    display: none;
+}
+#footer h3 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+#footer .itemGroup {
+    float: left;
+    margin: 5px 0 0 24px;
+}
+
+#footerServices {
+    width: 192px;
+}
+#footerInstitutional {
+    width: 179px;
+}
+#footerVipClub {
+    width: 145px;
+}
+
+#footerVipClub div {
+    background: url("/arquivos/sprite_footer.png") no-repeat scroll -116px 0 transparent;
+    float: left;
+    height: 55px;
+    width: 211px;
+}
+
+#footerPagamento div {
+    background: url("/arquivos/sprite_footer.png") no-repeat scroll 0 -62px transparent;
+    height: 93px;
+    width: 260px;
+}
+
+#social div a{
+	width: 38px;
+	display:block;
+	height: 38px;
+	float: left;
+	margin-right: 10px;
+}
+
+#social #facebook a{
+	background: url(/arquivos/sprite_social.png) 0 0 no-repeat;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+
+#social #facebook a:hover{
+	background: url(/arquivos/sprite_social.png) 0 -39px no-repeat;
+}
+
+#social #twitter a{
+	background: url(/arquivos/sprite_social.png) -39px 0 no-repeat;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+}
+
+#social #twitter a:hover{
+	background: url(/arquivos/sprite_social.png) -39px -39px no-repeat;
+}
+
+#footerServicesAssociate a {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    float: left;
+    font-weight: 700;
+    margin-top: 18px;
+    padding: 2px 3px;
+}
+#footerNews {
+    width: 180px;
+}
+#footerNews h3 {
+    background-position: 0 -100px;
+    height: 29px;
+    margin-bottom: 0;
+    width: 144px;
+}
+#footerNews h4 {
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+#footerNews p {
+    line-height: 1.1em;
+}
+#footerNews p a {
+    text-decoration: underline;
+}
+.department #footerNewsletter {
+    display: none;
+}
+.department #footerNews {
+    width: 390px;
+}
+#network li {
+    float: left;
+}
+#network a {
+    display: block;
+    height: 31px;
+    margin-right: 5px;
+    width: 30px;
+}
+#ntBlog {
+    background-position: 0 -150px;
+}
+#ntTwitter {
+    background-position: -30px -150px;
+}
+#ntYoutube {
+    background-position: -60px -150px;
+}
+#ntFacebook {
+    background-position: -90px -150px;
+}
+#footer #footerNewsletter {
+    float: right;
+    margin-left: 0;
+    margin-right: 5px;
+    width: 159px;
+}
+#footerNewsletter input {
+    margin-top: 3px;
+    width: 155px;
+}
+#footerNewsletter p:after {
+    content: ":";
+}
+#footerNewsletter p span {
+    display: none;
+}
+#footerNewsletter p span.subTitle {
+    display: inline;
+    text-transform: capitalize;
+}
+#footerNewsletter .btn-ok {
+    float: right;
+    margin-right: 2px;
+    width: auto;
+}
+#footerSearch{
+    background: none repeat scroll 0 0 #EAE9E8;
+}
+#footerSearch {
+    padding: 15px 23px 13px 11px;
+}
+#logoBuscape {
+    width: 110px;
+}
+#logoBondFaro {
+    background-position: -120px center;
+    width: 96px;
+}
+#logoEbit {
+    background-position: -220px center;
+    width: 42px;
+}
+#logoUndefined1 {
+    background-position: -270px center;
+    width: 42px;
+}
+#logoUndefined2 {
+    background-position: -320px center;
+    width: 38px;
+}
+#logoInternet {
+    background-position: -360px center;
+    width: 68px;
+}
+#logoCamara {
+    background-position: -435px center;
+    width: 118px;
+}
+#logoWebsolve {
+    background-position: -560px center;
+    width: 84px;
+}
+#logoBlindado {
+    background-position: -655px center;
+    width: 96px;
+}
+.cadastro-cliente .content, .manutencao-conta .content, .checkout .content {
+    float: right;
+    width: 786px;
+}
+#TB_iframeContent {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#TB_overlay {
+    background: none repeat scroll 0 0 #000000;
+    opacity: 0.7;
+}
+.cadastro-cliente legend, .manutencao-conta legend, .lista-endereco legend, .manutencao-conta h3, .cadastro-endereco h3, .checkout .content h3, .tabela-pedidos h3 {
+    font-weight: 700;
+    padding: 16px 0 4px;
+}
+.login .grp, .cadastro-cliente .grp, .cadastro-endereco .grp, .manutencao-conta .grp, .meus-pedidos .grp, .minha-conta .grp, .nao-altera {
+    margin-top: 5px;
+    overflow: hidden;
+}
+.login label, .cadastro-cliente .content label, .cadastro-endereco label, .manutencao-conta .content label, .endereco-compra .content label, .minha-conta .content label, .nao-altera span {
+    float: left;
+    margin-top: 2px;
+    width: 190px;
+}
+.register-info .bt, .login .continuar, .cadastro-cliente .continuar-usuario, .minha-conta .outras-opcoes ul, .minha-conta .btw, .meus-pedidos .ok{
+    margin-bottom: 20px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+.bts .bt, .pagamento .bt, .voltar a, .confirmar-pedido input, .cadastrar-novo a {
+    font-size: 11px;
+    min-width: 0;
+}
+.login .grp a, .cadastro fieldset a, .cadastro-endereco a, .alterar-email a, .success a, .addPhoto a, .alterar-senha fieldset a, .informacoes-conta a {
+    text-decoration: underline;
+}
+.register-info .bt, .bts a, .voltar a, .cadastrar-novo a, .continuar-comprando a {
+    display: block;
+    float: left;
+    padding: 1px 10px;
+    text-decoration: none !important;
+    width: auto;
+}
+.voltar a, .voltar input, .address-list .bts a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: inherit;
+    padding: 0;
+    text-decoration: underline !important;
+    width: auto !important;
+}
+.aviso-erro {
+    background: none repeat scroll 0 0 #EAE9E8;
+    margin-bottom: 20px;
+    padding: 12px;
+    text-align: center;
+}
+.login .content h4 {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+#ctl00_Conteudo_divLogin {
+    border-right: 1px dotted #999999;
+    float: left;
+    width: 450px;
+}
+.login label {
+    width: 115px;
+}
+.login .grp{
+    margin-top: 10px;
+}
+.login-email-links {
+    clear: both;
+    margin-top: 2px;
+    overflow: auto;
+}
+.login-email-links li, .login-email-links a {
+    display: inline;
+    float: left;
+}
+.login-email-links a {
+    margin-right: 10px;
+}
+.register-info {
+    float: right;
+    width: 410px !important;
+}
+.register-info strong {
+    display: block;
+    margin: 20px 0 10px;
+}
+.register-info .vantagens {
+    list-style: disc outside none;
+    margin-left: 13px;
+}
+.register-info .vantagens li {
+    margin-bottom: 4px;
+}
+.minha-conta .outras-opcoes ul {
+    margin-top: 8px;
+}
+.minha-conta .outras-opcoes a {
+    background: none repeat scroll 0 0 transparent;
+    clear: both;
+    color: #000000;
+    display: block;
+    float: left;
+    text-decoration: underline;
+}
+.cadastro-cliente .areaAvisos label {
+    display: block;
+    float: none;
+    margin-top: 6px;
+    width: 500px !important;
+}
+.cadastro-cliente .frmTipoPessoa label, .cadastro-cliente label.sexo-m, .cadastro-cliente label.sexo-f {
+    margin-right: 26px;
+    width: auto;
+}
+input.cep-prefixo {
+    width: 70px;
+}
+.cep-sufixo, .fNumero input {
+    width: 30px;
+}
+.cadastro-cliente .email, .alterar-email input, .esqueci-senha .email input {
+    width: 185px;
+}
+.alterar-email .fipassword {
+    width: 92px;
+}
+.permission-sel, .nao-altera em {
+    display: none;
+}
+.dia, .mes {
+    width: 20px;
+}
+.ano {
+    width: 40px;
+}
+.minha-conta span.fSexo label {
+    float: none;
+    margin: 0 20px 0 6px;
+    width: auto;
+}
+.minha-conta .ficheckbox {
+    float: left;
+    margin-top: 4px;
+}
+.minha-conta legend {
+    display: none;
+}
+.minha-conta .nav {
+    clear: left;
+    float: left;
+    margin-left: 8px;
+    margin-top: 20px;
+    width: 166px;
+}
+.minha-conta .nav ul {
+    margin-bottom: 16px;
+    margin-left: 10px;
+}
+.minha-conta .abas {
+    border-bottom: 1px solid #195073;
+    left: 0;
+    margin-left: -196px;
+    overflow: hidden;
+    padding-bottom: 4px;
+    position: absolute;
+    top: 10px;
+    width: 986px;
+}
+.minha-conta .abas li {
+    float: left;
+}
+.minha-conta .abas a {
+    display: block;
+    font-size: 15px;
+    padding: 3px 9px;
+}
+.minha-conta .abas .meu-perfil a {
+    background: url("/arquivos/tabs-bg.gif") no-repeat scroll right 5px transparent;
+}
+.minha-conta .nav h3 {
+    background: none repeat scroll 0 0 #EAE9E8;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 9px;
+    padding: 5px 8px 9px;
+}
+.minha-conta .breadcrumb, .minha-conta .area-3-2-1 {
+    display: none;
+}
+.minha-conta .area-3-2, .minha-conta .content, .meus-pedidos .content {
+    float: right;
+    position: relative;
+    width: 790px;
+}
+.minha-conta .nav, .minha-conta .area-3-2, .meus-pedidos .content {
+    padding-top: 35px;
+}
+.meus-dados h4, .filtrar legend {
+    font-weight: 700;
+}
+.minha-conta .dados {
+    overflow: hidden;
+}
+.minha-conta .dados dt, .minha-conta .dados dd {
+    float: left;
+}
+.minha-conta .dados dt {
+    clear: left;
+    width: 130px;
+}
+.minha-conta .area-3-2-3 h4, .minha-conta .area-3-2-5 h3, .minha-conta .area-3-2-10 h3 {
+    border-bottom: 1px solid #000000;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    padding: 5px 0;
+}
+.minha-conta h3 a {
+    text-decoration: none;
+}
+.minha-conta .area-3-2-5 dt {
+    font-weight: 700;
+    margin: 15px 0 2px;
+}
+.minha-conta .comentario-produto a {
+    text-decoration: underline;
+}
+.minha-conta .comentario-produto li {
+    margin: 3px 0;
+}
+.meus-pedidos .filtrar {
+    margin-top: 30px;
+}
+#orderInfoProductList, #orderInfoProductList th, #orderInfoProductList td {
+    border: 1px solid #666666;
+}
+#orderInfoProductList th, #orderInfoProductList td {
+    padding: 2px 5px;
+}
+#orderInfoProductList th {
+    font-weight: 700;
+    text-align: center;
+}
+#orderInfoProductList .links {
+    text-align: center;
+}
+#orderInfoProductList a {
+    text-decoration: underline;
+}
+#ctl00_Conteudo_divTitulo {
+    display: none;
+}
+.endereco-compra .select-address a {
+    float: left;
+    min-width: 0;
+    padding: 1px 10px;
+    text-decoration: none;
+}
+.endereco address {
+    clear: both;
+    padding-top: 8px;
+}
+.address-list li {
+    float: left;
+    margin: 0 20px 15px 0;
+}
+.tipoPagamento li {
+    margin-top: 15px;
+}
+.tipoPagamento br {
+    margin-top: 8px;
+}
+.tipoPagamento input {
+    float: left;
+    margin: 2px 4px 0 0;
+}
+.fEndereco input {
+    width: 160px;
+}
+.valor-compra {
+    margin-bottom: 40px;
+}
+.valor-compra th {
+    padding-right: 20px;
+}
+.valor-compra td {
+    text-align: right;
+}
+.valor-compra .valor-total th, .valor-compra .valor-total td {
+    font-weight: 700;
+}
+.lista-formas-pagamento {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.lista-formas-pagamento li {
+    float: left;
+    margin-right: 30px;
+}
+.lista-formas-pagamento label {
+    cursor: pointer;
+}
+.lista-formas-pagamento img {
+    margin-left: 4px;
+    vertical-align: middle;
+}
+.lista-formas-pagamento strong {
+    display: block;
+}
+.selec-cartoes legend {
+    display: none;
+}
+.credit-card-info fieldset {
+    margin: 2px 0;
+}
+.formapagamento-descricao em {
+    margin-right: 10px;
+}
+.boleto-wrapper {
+    margin-bottom: 20px;
+}
+.dados-produto, .dados-produto td, .dados-produto th {
+    border: 1px solid #666666;
+}
+.dados-produto th, .dados-produto td {
+    padding: 2px 5px;
+}
+.dados-produto {
+    margin: 20px 0;
+}
+.dados-produto th {
+    font-weight: 700;
+}
+.cadastrar-novo a {
+    display: inline;
+    float: none;
+}
+.success p {
+    margin: 10px 0;
+}
+.order-number br {
+    display: none;
+}
+.order-number strong {
+    font-size: 14px;
+}
+
+.carrinho .content .bt {
+	border: none;
+	box-shadow: none;
+}
+/*.carrinhoTable thead, .carrinhoTable tbody {
+    border: 1px solid #999999;
+}
+.carrinhoTable thead {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-bottom: medium none;
+    color: #666666;
+}
+.carrinhoTable tbody {
+    border-top: medium none;
+}
+.carrinhoTable thead th, .carrinhoTable tbody input, .carrinho tbody td.preco-total {
+    font-size: 12px;
+    font-weight: 700;
+}
+.carrinhoTable th {
+    text-align: center;
+}
+.carrinhoTable th, .carrinhoTable td {
+    padding: 5px;
+}
+.carrinhoTable tbody input {
+    color: #3A3A38;
+}
+*/.carrinho .sidebar {
+    display: none;
+}
+.carrinho legend {
+    font-weight: 700;
+}
+.carrinho .grp label {
+	display: none;
+}
+.carrinho td.preco-unitario, .carrinho tbody td.preco-total {
+    color: #195073;
+	text-align: center;
+}
+.carrinho td.preco-unitario s {
+    color: #666666;
+    font-weight: normal;
+}
+.carrinhoTable .produto a.sku-imagem{
+    float: left;
+}
+.carrinhoTable .produto img {
+    display: block;
+}
+.carrinho .controle-quantidade {
+    display: none;
+}
+.carrinhoTable .txtSubTotal,
+.carrinhoTable .txt-frete{
+    padding-left: 414px;
+	text-align: right;
+	font-size: 14px;
+}
+
+.carrinhoTable .preco-total{
+	text-align: center;
+}
+
+.carrinhoTable #ctl00_Conteudo_rptCarrinho_ctl00_trCarrinhoLinha .preco-total{
+	font-size: 16px;
+	color: #a7a7a7;
+}
+
+.carrinhoTable tfoot .preco-total,
+.carrinhoTable .valor,
+.carrinhoTable .frete-gratis,
+.carrinhoTable .valor-total{
+	padding-right: 20px;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+td.valor{
+	background: #e1e1e1;
+}
+
+.carrinho .valor-parcelado{
+	text-align: right;
+	font-weight: bold;
+	font-size: 15px !important;
+}
+
+.carrinhoTable .quantidade {
+    text-align: center;
+}
+.carrinhoTable .preco-unitario, .carrinhoTable tbody, .carrinho .frete-gratis, .carrinho .valor {
+    text-align: right;
+    width: 110px;
+}
+
+.carrinhoTable .preco-unitario{
+	text-align: center;
+}
+.carrinhoTable .excluir a {
+    font-size: 10px;
+    text-decoration: underline;
+}
+.carrinho tfoot{
+    padding-right: 58px;
+	
+}
+
+.carrinho .total {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.carrinho .excluir {
+    text-align: center;
+    width: 43px;
+}
+.carrinho label.cep-prefixo {
+    display: none;
+}
+.dica-carrinho {
+    padding-top: 20px;
+}
+.carrinho .bts {
+    margin: 20px 0 10px 0;
+    overflow: auto;
+}
+.carrinho .content .bts li a {
+    display: block;
+    padding: 4px 8px;
+}
+.carrinho .continuar-comprando {
+    float: left;
+}
+.carrinho .finalizar-compra {
+    float: right;
+    margin-right: 158px;
+}
+.box-dados-pedido, .box-dados-pagamento {
+    border: 4px solid;
+    float: left;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 700px;
+}
+.box-dados-pedido dt {
+    float: left;
+    margin-right: 10px;
+}
+.endereco-entrega, .dados-entrega, .descricao-entrega, .descricao-compra, .dados-pagamento {
+    border: 1px solid;
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    width: 700px;
+}
+
+
+/****************************************/
+
+#ctl00_TopBar_TopBar1_lblMenuSuperior{
+	margin-top: 105px;
+}
+
+#ctl00_TopBar_TopBar1_ulServicos{
+	margin: 0 !important;
+	width: 980px !important;
+	height: 108px;
+	overflow: hidden;
+	position: absolute !important;
+	/*top: -105px !important;*/
+	background: white;
+}
+
+#ctl00_TopBar_TopBar1_ulServicos #title{
+	display: block !important;
+    width: 390px !important;
+	height: 104px !important;
+	overflow: hidden !important;
+	float: left !important;
+}
+
+#contact,
+ul#conta{
+	display: block;
+    width: auto;
+	height: auto !important;
+	position: absolute;
+	right: 20px;
+}
+
+#contact{
+	width: 508px !important;
+	top: 15px;
+}
+
+#contact li {
+	display: inline;
+	font-size: 11px;
+	padding: 0 5px !important;
+}
+
+#contact a{
+	color: #333;
+}
+
+#contact .last{
+	margin-left: 5px;
+}
+
+ul#conta{
+	background: none repeat scroll 0 0 black;
+    line-height: 1;
+    padding: 6px 5px 5px 0;
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    z-index: 0;
+	width: 276px;
+}
+
+ul#conta a{
+	color: #fff !important;
+	font-size: 11px;
+}
+
+#ctl00_TopBar_TopBar1_pnlTopBarAssincrono{
+	display: none;
+}
+
+.content h2{
+	display: none;
+}
+
+.carrinho .continuar-comprando,
+.carrinho .finalizar-compra{
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: auto;
+	height: 41px;
+	overflow: hidden;
+}
+
+.carrinho .continuar-comprando a{
+	margin: 0;
+	padding: 0 !important;
+	display: block;
+	width: 225px !important;
+	height: 41px;
+	overflow: hidden;
+	border: none;
+	background: url(/arquivos/sprite-buttons-carrinho.jpg) 0 0 no-repeat;
+	
+	text-indent: -999px;
+}
+
+.carrinho .finalizar-compra a{
+	margin: 0;
+	padding: 0 !important;
+	display: block;
+	width: 240px !important;
+	height: inherit;
+	overflow: hidden;
+	border: none;
+	background: url(/arquivos/sprite-buttons-carrinho.jpg) 0 -41px no-repeat;
+	
+	text-indent: -999px;
+}
+
+.bts{
+	padding: 0 0 10px 0;
+}
+
+.bts.top{
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.search label,
+#ctl00_BuscaTxt_Top_ctrBuscaTxt_ddlIdCategoria{
+	display: none;
+}
+
+.carrinho .content{
+	margin-top: 20px;
+	padding: 10px 20px;
+	width: 940px;
+	background: white;
+}
+
+.carrinhoTable{
+	width: 100%;
+	border: none;
+}
+
+.carrinhoTable thead tr{
+	padding: 5px;
+	background: #e1e1e1;
+	
+	font-size: 16px;
+}
+
+.carrinhoTable thead th.produto{
+	padding-left: 10px;
+}
+
+.carrinhoTable td{
+	padding: 10px 5px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+#ctl00_Conteudo_rptCarrinho_ctl00_lnkApagarCarrinhoSkuCondensado{
+	margin: auto;
+	display: block;
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+	background: url(/arquivos/ico-delete.jpg) center no-repeat;
+	
+	text-indent: -999px;
+}
+
+.produto img{
+	margin-right: 20px;
+	width: 90px;
+	height: 100px;
+}
+
+.produto h4{
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.quantidade input{
+	padding: 5px 0;
+	border: none;
+	background: #f1f1f1;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+td.preco-unitario{
+	text-align: center;
+}
+
+.preco-unitario span{
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+}
+
+.vale-presente legend,
+.cepline legend{
+	margin: 0 20px 5px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.vale-presente input[type=text], .cep-sufixo input, .cep-prefixo input{
+	float: left;
+	padding: 7px 5px;
+	border: 1px solid #ebebeb;
+	box-shadow: inset 0 2px 2px #999;
+	
+	font-size: 12px;
+}
+
+.vale-presente input{
+	width: 170px;
+}
+
+td.vale-presente{
+	color: #fff;
+}
+
+.cepline .fisubmit,
+.vale-presente .fisubmit{
+	margin: 2px 0 0 10px;
+	padding: 0;
+	height: 28px;
+	overflow: hidden;
+	text-indent: -999px;
+	
+	font-size: 12px;
+}
+
+.cepline .fisubmit{
+	width: 37px !important;
+	background: url(/arquivos/sprite-buttons.png) 0 0 no-repeat;
+}
+
+.vale-presente .fisubmit{
+	width: 77px !important;
+	background: url(/arquivos/sprite-buttons.png) -38px 0 no-repeat;
+}
+
+.msgValCEP{
+	display: none;
+}
+
+#containerCredits {
+	width: 100%;
+	height:45px;
+	float: left;
+	background:#e1e1e1;
+}
+
+
+#footerCredits {
+	font-size: 10px;
+	margin: 0 auto;
+	width: 982px;
+	padding-top: 8px;
+	position: relative;
+}
+
+#footerCredits p {
+	width: 590px;
+}
+
+#footerCredits div {
+	position: absolute;
+	top: 9px;
+}
+
+#footerVipClub {
+    width: 245px;
+}
+
+#footer h3 {
+    text-transform: uppercase;
+}
+
+
+
+#social{
+	float: right;
+    width: 96px;
+}
+
+#footerCredits div {
+    position: absolute;
+    top: 9px;
+}
+#logoVtex {
+    right: 125px;
+}
+
+#logoVtex a {
+    background: url("/arquivos/sprite_logos.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 35px;
+    width: 93px;
+}
+
+#logoCookie {
+    right: 0;
+}
+
+#logoCookie a {
+    background: url("/arquivos/sprite_logos.png") no-repeat scroll right top transparent;
+    display: block;
+    height: 35px;
+    width: 115px;
+}
+
+#footer .columnList a {
+    line-height: 1.8em;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+
+#footer h3, #history h4, #social h3{
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 5px;
+	color: #000;
+}
+
+
+/******/
+
+#ctl00_TopBar_TopBar1_outerHeader{
+	overflow: hidden;
+	background: white;
+}
+
+#ctl00_TopBar_TopBar1_outerHeader h1{
+	float: left;
+}
+
+#ctl00_TopBar_TopBar1_lnkHome{
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+#ctl00_TopBar_TopBar1_divPassos{
+	margin: 20px 30px 0 0;
+	float: right;
+}
+
+#ctl00_TopBar_TopBar1_divPassos li{
+	height: 58px;
+	float: left;
+	text-indent: -999px;
+}
+
+#ctl00_TopBar_TopBar1_liIdentificacao{
+	width: 175px;
+	background: url(/arquivos/sprite-step.jpg) 0 0 no-repeat;
+}
+
+#ctl00_TopBar_TopBar1_liEntregaEmbalagem{
+	width: 275px;
+	background: url(/arquivos/sprite-step.jpg) -175px 0 no-repeat;
+}
+
+#ctl00_TopBar_TopBar1_liPagamento{
+	width: 175px;
+	background: url(/arquivos/sprite-step.jpg) -450px 0 no-repeat;
+}
+
+.login .content{
+	margin: 10px 0;
+	background: white;
+	overflow: hidden;
+}
+
+.login .sign-in{
+	width: 470px;
+}
+
+.login .content h4{
+	margin-bottom: 25px;
+	
+	font-size: 18px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.mainWrapper{
+	padding: 20px 40px;
+}
+
+.mainWrapper .bt{
+	padding: 5px 20px;
+	border: none;
+	background: #e1e1e1;
+	float: right;
+	
+	font-size: 18px;
+	color: #333;
+	text-shadow: 0 1p 0 #fff;
+	font-weight: bold;
+}
+
+.mainWrapper .fisubmit{
+	margin-right: 105px;
+}
+
+.login label{
+	width: 100%;
+	
+	font-size:  13px;
+	color: #333;
+}
+
+.login .fitext{
+	padding: 7px 5px !important;
+	width: 332px !important;
+	box-shadow: inset 1px 1px 2px #999 !important;
+	border: 1px solid #ebebeb !important;
+}
+
+.ctl00_TopBar_ComercioTopBar_lnkHome{
+	display: none;
+}
+
+#ctl00_TopBar_ComercioTopBar_lnkHome,
+#ctl00_TopBar_ComercioTopBar_pnlTopBarAssincrono{
+	display: none !important;
+}
+
+#ctl00_TopBar_ComercioTopBar_ulServicos{
+	position: static;
+}
+
+#ctl00_TopBar_ComercioTopBar_ulServicos #header{
+	margin: -2px 0 0 0 !important;
+	width: 982px !important;
+}
+
+#mainContent{
+	margin: 10px 0;
+	padding: 5px 15px;
+	width: 952px !important;
+	background: #fff;
+}
+
+#ctl00_TopBar_ComercioTopBar_outerHeader{
+	margin: 0 auto;
+    overflow: hidden;
+    width: 980px;
+}
+
+
+
+
+
+.grp.fRadio.fSexo .main{
+	width: 190px !important;
+}
+
+#ctl00_TopBar_ComercioTopBar_lblMenuSuperior{
+	position: absolute;
+	top: 77px;
+	right: 0;
+}
+
+
+
+
+
+
+
