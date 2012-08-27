@@ -47,7 +47,6 @@ $(document).ready(function() {
 			tab1 = $( ".tabs #tab-1" ),
 			tab2 = $( ".tabs #tab-2" ),
 			tab3 = $( ".tabs #tab-3" );
-			tab4 = $( ".tabs #tab-4" );
 			
 		
 		abas.click( function(){
@@ -72,12 +71,7 @@ $(document).ready(function() {
 		
 		aba4.click( function(){
 			tabs.removeClass( "active" );
-			tab4.addClass( "active" );
+			tab2.addClass( "active" );
 		});
 	});
-	
-	$('#search_cart, #cart, #conta, .searchWrapper:first').wrapAll('<div id="header_carrinho"></div>');
-	
-	$('.produto .productReference').prependTo('.produto .descricao-preco');
-	
 });
