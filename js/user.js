@@ -34,7 +34,16 @@ $(document).ready(function() {
 	$('#search_cart, #cart, #conta, .searchWrapper:first').wrapAll('<div id="header_carrinho"></div>');
 	//$('#ctl00_TopBar_TopBar1_ulServicos #barra_info.barratop').prependTo('body');
 	$('.header ul #barra_info.barratop').prependTo('body');
+	
 	$('.mainContentWrapper .history').prependTo('.footer #containerFooter');
 	$('#menu01').appendTo('#header');
+	
+	//$('<div class="barratop" id="barra_info">FRETE GRÁTIS ACIMA DE R$ 199,90* | EM ATÉ 6X SEM JUROS | 5% DE DESCONTO NO BOLETO | 48h PARA ENTREGAS EM CAPITAIS* | 30 DIAS PARA DEVOLUÇÃO GRÁTIS | 1ª TROCA SEM CUSTO*</div>').prependTo('body.login');
+	$('.login .footer').appendTo('body.login');
+	$('.cadastro-cliente .mainContentWrapper div.content #mainContent').removeClass('content');
+	
+	//$('<div class="barratop" id="barra_info">FRETE GRÁTIS ACIMA DE R$ 199,90* | EM ATÉ 6X SEM JUROS | 5% DE DESCONTO NO BOLETO | 48h PARA ENTREGAS EM CAPITAIS* | 30 DIAS PARA DEVOLUÇÃO GRÁTIS | 1ª TROCA SEM CUSTO*</div>').prependTo('body.checkout.endereco-compra');
+	
+	$('body.checkout.forma-pagamento .footer').appendTo('body.checkout.forma-pagamento');
 	
 });

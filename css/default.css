@@ -1,15 +1,5 @@
 #textContent h3{font-weight:700;margin-bottom:17px;}
 
-#container {
-	width: 982px;
-	margin: 0 auto;
-}
-
-#all {
-	width:982px;
-	float:left;
-	margin-bottom: 10px;
-}
 
 
 
@@ -342,15 +332,15 @@ h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transf
 
 
 
-.identificacao{
+/*.identificacao{
 	font-size: 13px;
-}
+}*/
 
 .continuar-usuario{
 	padding: 20px 25px;
 }
 
-.identificacao fieldset{
+/*.identificacao fieldset{
 	margin: 0 15px;
 	padding: 10px 25px 10px;
 	display: block;
@@ -375,7 +365,7 @@ h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transf
 	display: block;
 	overflow: hidden;
 }
-
+*/
 #ctl00_Conteudo_ctrlCadastroCliente_txtNome,
 #ctl00_Conteudo_ctrlCadastroCliente_txtSobrenome,
 #ctl00_Conteudo_ctrlCadastroCliente_txtEmail,
@@ -465,7 +455,7 @@ h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transf
 	width: 100% !important;
 }
 
-#ctl00_TopBar_TopBar1_divPassos{
+/*#ctl00_TopBar_TopBar1_divPassos{
 	margin: 20px 30px 0 0;
 	float: right;
 }
@@ -480,9 +470,9 @@ h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transf
 	height: 58px;
 	float: left;
 	text-indent: -999px;
-}
+}*/
 
-#ctl00_TopBar_TopBar1_liIdentificacao{
+/*#ctl00_TopBar_TopBar1_liIdentificacao{
 	width: 175px;
 	background: url(/arquivos/sprite-step.jpg) 0 0 no-repeat;
 }
@@ -495,7 +485,7 @@ h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transf
 #ctl00_TopBar_TopBar1_liPagamento{
 	width: 175px;
 	background: url(/arquivos/sprite-step.jpg) -450px 0 no-repeat;
-}
+}*/
 
 
 
@@ -517,14 +507,17 @@ fieldset{border:none;}
 
 body{font-family: 'Droid Sans', sans-serif;font-size:11px;background: url(/arquivos/bg_loja.png);}
 
-.content{background: #FFF;margin-top: 20px ;overflow: hidden;padding: 15px;width: 950px;color:#333333;font-size: 12px;}
+#container, .login .mainContentWrapper{width: 982px;margin: 0 auto;}
+#all{width:982px;float:left;margin-bottom: 20px;}
 
-.fitext{background:url(/arquivos/txt_fundo.jpg) no-repeat left top;border:1px solid #ebebeb;font-size:12px;padding:5px;width:355px;}
+.content{background: #FFF;margin-top: 20px ;overflow: hidden;padding: 15px;width: 952px;color:#333333;font-size: 12px;clear:both;}
+
+.fitext, select{background:url(/arquivos/txt_fundo.jpg) no-repeat left top;border:1px solid #ebebeb;font-size:12px;padding:5px;width:355px;}
 #ctl00_Conteudo_txtCpfCnpj{width:112px;}
 #ctl00_Conteudo_txtCep{width:39px;}
 #ctl00_Conteudo_txtCepSufixo{width:30px;}
 
-.bt{background:#e1e1e1;border:none;padding:10px 15px;color:#333333 !important;text-shadow:2px 2px 1px #FFF;-moz-text-shadow:2px 2px 1px #FFF;-webkit-text-shadow:2px 2px 1px #FFF;text-transform:uppercase;text-decoration:none;font-weight:bold;font-size:13px !important;cursor:pointer;}
+.bt{background:#e1e1e1;border:none;padding:10px 15px;color:#333333 !important;text-transform:uppercase;text-decoration:none;font-weight:bold;font-size:13px !important;cursor:pointer;text-shadow:2px 2px 1px #FFF;-moz-text-shadow:2px 2px 1px #FFF;-webkit-text-shadow:2px 2px 1px #FFF;}
 
 .mainContentWrapper .bottomSearchWrapper, .manutencao-conta .outras-opcoes{display:none;}
 
@@ -538,9 +531,9 @@ body{font-family: 'Droid Sans', sans-serif;font-size:11px;background: url(/arqui
 .wrapVitrine, .produto .container.box{background:#FFF;padding: 15px;margin-bottom: 10px;}
 .content h2, #sideBar h2, .navigator h5, .wrapVitrine h3.title, .produto .container.box h2{background: url(/arquivos/titulos_fundo.jpg) repeat-x scroll left top transparent;margin-bottom: 10px;padding: 9px 15px;color: #000000;font-size: 17px;font-weight: bold;text-transform: uppercase;text-shadow:2px 2px 1px #FFF;-moz-text-shadow:2px 2px 1px #FFF;-webkit-text-shadow:2px 2px 1px #FFF;}
 
-#barra_atendimento_online {background: #CCCCCC;clear: both;color: #333333;font-size: 11px;font-weight: bold;margin-bottom: 10px;padding: 10px 3px;width: 767px;}
-#barra_atendimento_online p {float: left;}
-#barra_atendimento_online .btn_atendimento_online a {background: none repeat scroll 0 0 #FFCC00;color: #000000;margin-left: 5px;padding: 4px 9px;text-decoration: none;}
+#barra_atendimento_online {background: #CCCCCC;clear: both;color: #333333;padding: 10px 3px;width: 767px;text-align: center;}
+#barra_atendimento_online p {float: left;font-size: 11px;font-weight: bold;}
+#barra_atendimento_online .btn_atendimento_online a {background: none repeat scroll 0 0 #FFCC00;color: #000000;margin-left: 5px;padding: 4px 9px;text-decoration: none;float:right;}
 
 #topNewsletter {background: url(/arquivos/bg_newsletter.jpg);float: left;width: 982px;height:48px;margin: 10px 0 0;}
 #topNewsletter fieldset {float: left;left: 285px;position: relative;top: 8px;}
@@ -556,14 +549,16 @@ body{font-family: 'Droid Sans', sans-serif;font-size:11px;background: url(/arqui
 /* ______ HEADER ______ */
 
 .header{margin: auto !important;width: 982px !important;}
+.header-steps {background: #FFFFFF;overflow: hidden;padding-bottom: 10px;width: 982px;}
 
 #barra_info.barratop{background: none repeat scroll 0 0 #000000;color: #FFFFFF;font-size: 11px;font-weight: bold;padding: 10px 0 9px;text-align: center;width: 100%;}
 
-h1#title {float: left;}
-h1#title a {background: url(/arquivos/logo_star_point.png) no-repeat top center;color: #000000;float: left;height: 73px;margin: 10px 0 0 20px;width: 279px;text-decoration:none;}
+h1#title, .header-steps h1{float: left;}
+h1#title a , .header-steps h1 a{background: url(/arquivos/logo_star_point.png) no-repeat top center;color: #000000;float: left;height: 73px;margin: 10px 0 0 20px;width: 279px;text-decoration:none;}
 h1#title a span{}
 
 #ctl00_TopBar_TopBar1_pnlTopBarAssincrono, #ctl00_TopBar_ComercioTopBar_pnlTopBarAssincrono, #ctl00_TopBar_ComercioTopBar_pnlTopBarAssincrono, #ctl00_TopBar_ComercioTopBar_lnkHome, #ctl00_TopBar_TopBar1_lnkHome{display:none;}
+.login .header-steps h1 a, .checkout.endereco-compra .header-steps h1 a, .frete .header-steps h1 a, .checkout.forma-pagamento .header-steps h1 a{display:block !important;text-indent:-9999px;}
 
 #header{position:relative;background: #fff;height: 110px;}
 
@@ -668,7 +663,7 @@ ul#conta a:hover{text-decoration:underline;}
 .login .content h2{display:none;}
 
 .login .register-info{float: right;width:400px;}
-.login .sign-in{float: left;width:370px;padding-right:77px;border-right:1px dotted #999999;}
+.login .sign-in{float: left;width:370px;padding-right:85px;border-right:1px dotted #999999;}
 .login .content h4{margin-bottom: 25px;font-size: 17px;color: #333;text-transform: uppercase;font-weight:bold;}
 .login #ctl00_Conteudo_ctrlLogin_ctrLogin{float:left;}
 .login #ctl00_Conteudo_ctrlLogin_ctrLogin .fSenha{margin-top:20px;float:left;}
@@ -778,30 +773,90 @@ ul#conta a:hover{text-decoration:underline;}
 .carrinho .carrinhoTable tbody {border-top: 1px solid #999999;border-bottom: 1px solid #999999;}
 .carrinho .carrinhoTable thead {background: #e1e1e1 !important;color: #000000;}
 .carrinho .carrinhoTable thead th, .carrinho .carrinhoTable tbody input, .carrinho tbody td.preco-total {font-size: 15px;color: #000000;text-transform: capitalize;text-shadow:2px 2px 1px #FFFFFF;-moz-text-shadow:2px 2px 1px #FFFFFF;-webkit-text-shadow:2px 2px 1px #FFFFFF;}
+.carrinho .carrinhoTable tbody input{text-align:center;background:#cccccc;color:#000;float:left;margin-left:8px;}
 .carrinho .carrinhoTable tbody {border-top: medium none;}
 .carrinho .carrinhoTable tbody td, .carrinho .carrinhoTable tfoot td{border-bottom: 1px solid #CCCCCC;padding: 5px 15px;text-align: center;}
 .carrinho .carrinhoTable tbody td.produto a{float:left;}
 .carrinho .carrinhoTable tbody td.produto img{width:94px;height:94px;}
 .carrinho .carrinhoTable tbody td.produto h4{margin-top: 25px;margin-left:10px;}
-.carrinho .carrinhoTable tbody td.produto h4, .carrinho .carrinhoTable tbody td.produto h4 a{color: #333333;float: left;font-size: 15px;text-align:center;}
+.carrinho .carrinhoTable tbody td.produto h4, .carrinho .carrinhoTable tbody td.produto h4 a{color: #333333;float: left;font-size: 15px;text-align:center;text-decoration:none;}
 .carrinho .carrinhoTable tbody td.produto, .carrinho .carrinhoTable thead th.produto{text-align:left;}
+.carrinho .controle-quantidade{float: left;margin-left: 5px;}
+.carrinho .controle-quantidade .adicionar-item a{background: url(/arquivos/sprite_icons.png) no-repeat scroll -1px -1px transparent;display: block;float: right;height: 14px;text-indent: -9999px;width: 14px;}
+.carrinho .controle-quantidade .remove-item a{background: url(/arquivos/sprite_icons.png) no-repeat scroll -1px -19px transparent;display: block;float: right;height: 14px;text-indent: -9999px;width: 14px;margin-top: 2px;}
 .carrinho .carrinhoTable thead th.servico, .carrinho .carrinhoTable thead td.excluir{width:35px;}
 .carrinho .carrinhoTable thead th{text-align: center;}
 .carrinho .carrinhoTable thead th.preco-total, .carrinho .carrinhoTable thead td.preco-total{text-align:left;}
 .carrinho .carrinhoTable tbody td.preco-total{color:#A7A7A7;}
 .carrinho .carrinhoTable thead th.quantidade, .carrinho .carrinhoTable thead th.preco-unitario, .carrinho .carrinhoTable thead th.preco-total{width:80px;}
+.carrinho .carrinhoTable tfoot{font-size:15px;color:#000;}
 .carrinho .carrinhoTable tfoot td.txtSubTotal{text-align:right;}
+.carrinho .carrinhoTable tfoot tr.vale-presente td.vale-presente{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";filter:alpha(opacity=00);-moz-opacity:0;-khtml-opacity: 0;opacity: 0;}
 .carrinho .carrinhoTable #ctl00_Conteudo_txtCep1{width:50px;}
 .carrinho .carrinhoTable #ctl00_Conteudo_txtCep2{width:70px;}
 .carrinho .carrinhoTable thead th, .carrinho .carrinhoTable thead td {padding: 5px 15px;}
 .carrinho .carrinhoTable .excluir a {background: url(/arquivos/ico-delete.jpg) no-repeat center;display: block;text-indent: -9999px;width: 17px;height: 17px;}
 .carrinho .carrinhoTable .texto-vale-presente label, .carrinho .carrinhoTable .texto-cepline label{display:none;}
-.carrinho .carrinhoTable .texto-vale-presente legend, .carrinho .carrinhoTable .texto-cepline legend{float: left;margin-top: 5px;}
-.carrinho .carrinhoTable .texto-vale-presente input.fitext{width: 180px;}
+.carrinho .carrinhoTable .texto-vale-presente legend, .carrinho .carrinhoTable .texto-cepline legend{float: left;margin-right: 5px;margin-top: 5px;text-align: left;width: 265px;}
+.carrinho .carrinhoTable .texto-vale-presente input.fitext{width: 153px;}
 .carrinho .carrinhoTable .texto-vale-presente input.bt, .carrinho .carrinhoTable .texto-cepline input.bt{font-weight: normal;padding: 4px 5px;}
 .carrinho .carrinhoTable .vale-presente, .carrinho .carrinhoTable .txt-frete, .carrinho .carrinhoTable .valor-total{text-align:right;}
-.carrinho .carrinhoTable .texto-vale-presente div.grp{float: left;margin-left: 10px;}
+.carrinho .carrinhoTable .texto-vale-presente div.grp{float: left;}
+.carrinho .carrinhoTable .grp.fMulti.fCep{text-align:left;}
+.carrinho .carrinhoTable tr.valor-parcelado .valor-parcelado{text-align:right;}
+.carrinho .carrinhoTable .preco-total, .carrinho .carrinhoTable .frete-gratis, .carrinho .carrinhoTable .valor{text-align:left;}
 
+
+
+/* ______ CHECKOUT ______ */
+
+.steps{display: block;float: right;margin-right: 20px;margin-top: 25px;text-indent: -9999px;}
+.steps ul{display:none;}
+.login .steps {background: url(/arquivos/sprite-step.jpg) no-repeat 0 -9px;width: 625px;height: 55px;}
+.endereco-compra .steps{ background: url(/arquivos/sprite-step.jpg) no-repeat 0 -69px; width: 625px; height: 55px;}
+.frete .steps{ background: url(/arquivos/sprite-step.jpg) no-repeat 0 -69px; width: 625px; height: 55px;}
+.forma-pagamento .steps{ background: url(/arquivos/sprite-step.jpg) no-repeat 0 -129px; width: 625px; height: 55px;}
+.confirmacao-compra .steps{background: url(/arquivos/sprite-step.jpg) no-repeat 0 -188px; width: 625px; height: 55px;}
+
+.endereco-compra .endereco h2{display:none;}
+.endereco-compra .lista-endereco{margin-bottom:10px;}
+.endereco-compra .lista-endereco legend{display:none;}
+.endereco-compra ul.address-list{overflow: hidden;width: 100%;}
+.endereco-compra ul.address-list > li{float: left;margin: 10px 20px 0 0;padding-right:10px;border-right:1px dotted #999999;width:205px;}
+.endereco-compra ul.address-list li .wrapper{overflow:hidden;}
+.endereco-compra .select-address a {text-decoration: none;text-transform:capitalize;float:left;}
+.endereco-compra .wrapper address{text-transform:uppercase;font-size:14px;margin:10px 0;clear:both;float:left;}
+.endereco-compra .wrapper p{text-transform:uppercase;font-size:12px;color:#333333;}
+.endereco-compra .bts .editar a{float:left;clear:both;}
+
+.endereco-compra #ctl00_Conteudo_ctrlEndereco_updEndereco div.cadastro-endereco{margin-top:15px;}
+.endereco-compra .cadastro-endereco h3{font-size:17px;font-weight:bold;}
+.endereco-compra .identificacao{border-top: 1px dotted #999999;font-size: 13px;margin-top: 5px;padding-top: 5px;}
+.endereco-compra fieldset.cadastro-endereco span {color: #FF0000;}
+.endereco-compra  label{color: #333333;float: left;margin-top: 5px;width: 190px;}
+.endereco-compra .grp{margin-top:5px;overflow:hidden;}
+.endereco-compra #ctl00_Conteudo_ctrlEndereco_lnkDuvidaCEPPJ{display:none;}
+.endereco-compra #ctl00_Conteudo_ctrlEndereco_txtCepPrefixo{width:125px;}
+.endereco-compra #ctl00_Conteudo_ctrlEndereco_txtCepSufixo{width:80px;}
+.endereco-compra #ctl00_Conteudo_ctrlEndereco_txtNumero{width:60px;}
+.endereco-compra select.estado, .endereco-compra select.tipo-endereco{width:367px;}
+.endereco-compra fieldset.bts{clear: both;float: left;margin-top: 5px;padding-left: 397px;}
+.endereco-compra fieldset.bts a, .endereco-compra fieldset.bts input{font-family: 'Droid Sans', sans-serif;}
+
+/*.endereco-compra .content label{float: left;margin-top: 2px;width: 190px;color:#6C6C6C;}
+.endereco-compra .bottomSearchWrapper {display:marker;clear:both;}
+.endereco-compra #ctl00_Conteudo_ctrlEndereco_updEndereco{font-size:14px;}
+.endereco-compra fieldset.bts{padding-left:415px;margin-top:5px;clear:both;float:left;}
+.endereco-compra fieldset.cadastro-endereco span{color:#F00;}
+.endereco-compra fieldset.cadastro-endereco span.ex-endereco{color:#333333;}
+.endereco-compra #ctl00_Conteudo_Busca_btnOK{width: 30px;height: 33px;background: none;border: none;cursor:pointer;text-indent: -99999px;position: relative;top: -2px;left: -32px;}*/
+
+.frete .fretes h3, .frete .fretes legend{display:none;}
+.frete .Agendamento{margin:10px 0;}
+.frete .ui-datepicker{width:99% !important;}
+.frete .ui-buttonset{margin-top:10px;float:left;}
+.frete fieldset.bts ul{float:right;}
+.frete fieldset.bts ul li{display:inline;}
 
 
 /* ______ FOOTER ______ */
