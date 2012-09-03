@@ -1,16 +1,4 @@
-#textContent h3{font-weight:700;margin-bottom:17px;}
-
-
-
-
-
-
-
-
-
-
-
-
+/*#textContent h3{font-weight:700;margin-bottom:17px;}
 
 #textContent{margin:0 18px 0 4px;}
 #textContent p{margin-bottom:17px;}
@@ -22,98 +10,24 @@
 
 #pnlNaoSeguro a#lnkLogOut{color:#999;margin:0;}
 
-
-
-
-#topBanners {
-	margin-top: 0;
-	width: auto;
-	height: auto;
-	overflow: hidden;
-	position: relative;
-}
+#topBanners {margin-top: 0;width: auto;height: auto;overflow: hidden;position: relative;}
 #bottomBanners{margin-top:18px;overflow:auto;_height:1%;}
 .home #bottomBanners{margin-left:8px;}
 .box-banner img{display:block;}
 
-#topBanners #prev2 {
-	width: 43px;
-	height: 406px;
-	background: url(/arquivos/bg_sliderNavigation.png) no-repeat top left;
-	position: absolute;
-	z-index: 100000;
-	cursor:pointer;
-}
-
-#topBanners #prev2:hover {
-	background-position: left bottom;
-}
-
-#topBanners #next2 {
-	width: 43px;
-	height: 406px;
-	background: url(/arquivos/bg_sliderNavigation.png) no-repeat top right;
-	position: absolute;
-	right:0;
-	z-index: 100000;
-	cursor:pointer;
-}
-
-#topBanners #next2:hover {
-background-position: right bottom;
-}
-
-#topBanners #prev,
-#topBanners #next{
-	padding: 0 5px;
-	width: 23px;
-	height: 100%;
-	overflow: hidden;
-	background: rgba( 0, 0, 0, .3 );
-	position: absolute;
-	top: 0;
-	z-index: 100000;
-	cursor:pointer;
-}
-
-#topBanners #prev{
-	left: 0;
-}
-
-#topBanners #next{
-	right: 0;
-}
-
-#topBanners #prev:hover,
-#topBanners #next:hover{
-	background: rgba( 0, 0, 0, .5 );
-}
-
-#topBanners #prev span,
-#topBanners #next span{
-	margin-top: -11px;
-	display: block;
-	width: 23px;
-	height: 23px;
-	position: absolute;
-	top: 50%;
-}
-
-#topBanners #prev span{
-	background: url(arrow-rotator-internal.png) left top no-repeat;
-}
-
-#topBanners #prev:hover span{
-	background: url(arrow-rotator-internal.png) left bottom no-repeat;
-}
-
-#topBanners #next span{
-	background: url(arrow-rotator-internal.png) right top no-repeat;
-}
-
-#topBanners #next:hover span{
-	background: url(arrow-rotator-internal.png) right bottom no-repeat;
-}
+#topBanners #prev2 {width: 43px;height: 406px;background: url(/arquivos/bg_sliderNavigation.png) no-repeat top left;position: absolute;z-index: 100000;cursor:pointer;}
+#topBanners #prev2:hover {background-position: left bottom;}
+#topBanners #next2 {width: 43px;height: 406px;background: url(/arquivos/bg_sliderNavigation.png) no-repeat top right;position: absolute;right:0;z-index: 100000;cursor:pointer;}
+#topBanners #next2:hover {background-position: right bottom;}
+#topBanners #prev, #topBanners #next{padding: 0 5px;width: 23px;height: 100%;overflow: hidden;background: rgba( 0, 0, 0, .3 );position: absolute;top: 0;z-index: 100000;cursor:pointer;}
+#topBanners #prev{left: 0;}
+#topBanners #next{right: 0;}
+#topBanners #prev:hover, #topBanners #next:hover{background: rgba( 0, 0, 0, .5 );}
+#topBanners #prev span, #topBanners #next span{margin-top: -11px;display: block;width: 23px;height: 23px;position: absolute;top: 50%;}
+#topBanners #prev span{background: url(arrow-rotator-internal.png) left top no-repeat;}
+#topBanners #prev:hover span{background: url(arrow-rotator-internal.png) left bottom no-repeat;}
+#topBanners #next span{background: url(arrow-rotator-internal.png) right top no-repeat;}
+#topBanners #next:hover span{background: url(arrow-rotator-internal.png) right bottom no-repeat;}
 
 
 
@@ -129,67 +43,29 @@ background-position: right bottom;
 
 
 
-.searchResultsTime{
-	display: none;
-}
+.searchResultsTime{display: none;}
 
-.resultado-busca-filtro fieldset{
-	margin-right: 35px;
-	float: left;
-}
+.resultado-busca-filtro fieldset{margin-right: 35px;float: left;}
 
-.orderBy label{
-	margin-right: 2px;
-	text-transform: uppercase;
-}
+.orderBy label{margin-right: 2px;text-transform: uppercase;}
 
-.orderBy select{
-	border-radius: 3px;
-	border: 1px solid #e3e9ef;
-	border-top-color: #abadb3;
-}
+.orderBy select{border-radius: 3px;border: 1px solid #e3e9ef;border-top-color: #abadb3;}
 
-.filterBy select{
-	border: none;
-}
+.filterBy select{border: none;}
 
-.compare{
-	display: none;
-}
+.compare{display: none;}
 
-.pages{
-	overflow: hidden;
-}
+.pages{overflow: hidden;}
 
-.pager.top .pages{
-	top: 10px;
-	right: 30px;
-	position: absolute;
-}
+.pager.top .pages{top: 10px;right: 30px;position: absolute;}
 
-.pager.bottom{
-	width: auto;
-	height: auto;
-	overflow: hidden;
-	position: relative;
-}
+.pager.bottom{width: auto;height: auto;overflow: hidden;position: relative;}
 
-.pager li{
-	margin: 0 2px;
-	padding: 0 3px;
-	width: auto;
-	height: auto;
-	overflow: hidden;
-}
+.pager li{margin: 0 2px;padding: 0 3px;width: auto;height: auto;overflow: hidden;}
 
-.pager .pgCurrent{
-	background: #fff;
-}
+.pager .pgCurrent{background: #fff;}
 
-.sub{
-	padding: 10px 30px;
-	background: #fff;
-}
+.sub{padding: 10px 30px;background: #fff;}
 
 .prateleira .prateleira{border:none;}
 #collections{position:relative;width:100%;}
@@ -199,49 +75,23 @@ background-position: right bottom;
 .prateleira .vitrine{left:0;margin-top:6px;}
 .vitrine .vitrine li{float:left;margin-right:70px;padding:34px 10px 0 0;position:relative;width:200px;}
 .vitrine .vitrine li.last{margin-right:0;}
-.vitrine li .data {
-	height: 120px;
-	position: relative;
-}
+.vitrine li .data {height: 120px;position: relative;}
 
-.vitrine li .data h3 a {
-	background: black;
-	padding: 3px 5px;
-	color: #FC0;
-	font-weight: bold;
-}
+.vitrine li .data h3 a {background: black;padding: 3px 5px;color: #FC0;font-weight: bold;}
 
-.vitrine li .data .price {
-	margin-top: 10PX;
-	width: 185px;
-	position: absolute;
-	bottom: 45px;
-}
+.vitrine li .data .price {margin-top: 10PX;width: 185px;position: absolute;bottom: 45px;}
 
 
-.prateleira li {
-	width: 175px;
-	float: left;
-	text-align: center;
-	margin: 5px;
-}
+.prateleira li {width: 175px;float: left;text-align: center;margin: 5px;}
 
-.vitrine .highlight a,
-.vitrine .price a{text-decoration:none;}
-
+.vitrine .highlight a, .vitrine .price a{text-decoration:none;}
 
 .vitrine .price{font-size:11px;clear:both;}
 .vitrine .price span span{display:none;}
 .vitrine .oldPrice{margin-right:4px;text-decoration:line-through;}
 .vitrine .newPrice{}
-.numParcela {
-	font-size: 10px;
-}
-.installment {
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-}
+.numParcela {font-size: 10px;}
+.installment {display: block;font-size: 14px;font-weight: bold;}
 .vitrine .quickView a{background-color:#ddd;background-position:-200px -110px;border:1px solid #ccc;color:#666;font-size:9px;line-height:1em;margin:2px 0 1px -2px;padding:1px 10px 4px 19px;position:absolute;}
 .vitrine .quickView a:hover{text-decoration:none;}
 
@@ -279,11 +129,9 @@ background-position: right bottom;
 #breadCrumbs li.last{background:none;}
 #breadCrumbs strong{font-weight:normal;}
 
-#breadCrumbs a,
-h2.titulo-sessao{color:#353535;}
+#breadCrumbs a, h2.titulo-sessao{color:#353535;}
 
-#breadCrumbs,
-h2.titulo-sessao{margin-left:4px;}
+#breadCrumbs, h2.titulo-sessao{margin-left:4px;}
 
 h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transform:uppercase;}
 
@@ -295,197 +143,29 @@ h2.titulo-sessao{font-size:27px;line-height:1.5em;margin-bottom:15px;text-transf
 #storeLouis a{background-position:0 -120px;height:11px;width:98px;}
 #storeYves a{background-position:0 -160px;height:20px;width:99px;}
 
+.topic{margin-top: 10px;padding: 5px;overflow: hidden;background: #ebebeb;}
+
+.topic.Cor{display: none;}
+
+.topic .specification{font-size: 12px;color: #333;text-transform: uppercase;}
+
+.topic input{visibility: hidden;}
+
+.topic label{padding: 3px 15px;border: 1px solid #ccc;background: #fff;}*/
 
 
 
 
 
-.topic{
-	margin-top: 10px;
-	padding: 5px;
-	overflow: hidden;
-	background: #ebebeb;
-}
-
-.topic.Cor{
-	display: none;
-}
-
-.topic .specification{
-	font-size: 12px;
-	color: #333;
-	text-transform: uppercase;
-}
-
-.topic input{
-	visibility: hidden;
-}
-
-.topic label{
-	padding: 3px 15px;
-	border: 1px solid #ccc;
-	background: #fff;
-}
-
-
-/* */
 
 
 
-/*.identificacao{
-	font-size: 13px;
-}*/
 
-.continuar-usuario{
-	padding: 20px 25px;
-}
 
-/*.identificacao fieldset{
-	margin: 0 15px;
-	padding: 10px 25px 10px;
-	display: block;
-	width: auto;
-	height: auto;
-	overflow: hidden;
-	border-bottom: 2px dotted #ebebeb;
-}
 
-.identificacao fieldset.areaAvisos{
-	border: none;
-}
 
-.identificacao fieldset label{
-	padding-top: 5px;
-	display: block;
-	width: 190px;
-	float: left;
-}
 
-.identificacao fieldset .grp {
-	display: block;
-	overflow: hidden;
-}
-*/
-#ctl00_Conteudo_ctrlCadastroCliente_txtNome,
-#ctl00_Conteudo_ctrlCadastroCliente_txtSobrenome,
-#ctl00_Conteudo_ctrlCadastroCliente_txtEmail,
-#ctl00_Conteudo_ctrlCadastroCliente_txtEmailConfirmacao{
-	width: 345px;
-}
 
-#ctl00_Conteudo_ctrlCadastroCliente_txtApelido,
-#ctl00_Conteudo_ctrlCadastroCliente_txtCpf,
-#ctl00_Conteudo_ctrlCadastroCliente_txtSenha,
-#ctl00_Conteudo_ctrlCadastroCliente_txtConfirmacaoSenha{
-	width: 200px !important;
-}
-
-#ctl00_Conteudo_ctrlCadastroCliente_txtDataNascDia,
-#ctl00_Conteudo_ctrlCadastroCliente_txtDataNascMes{
-	width: 40px !important;
-}
-
-#ctl00_Conteudo_ctrlCadastroCliente_txtDataNascAno{
-	width: 70px !important;
-}
-
-#ctl00_Conteudo_ctrlCadastroCliente_txtCep1,
-#ctl00_Conteudo_ctrlCadastroCliente_txtTelRes,
-#ctl00_Conteudo_ctrlCadastroCliente_txtTelCom_PF,
-#ctl00_Conteudo_ctrlCadastroCliente_txtCel{
-	width: 110px;
-}
-
-#ctl00_Conteudo_ctrlCadastroCliente_txtCep2{
-	width: 65px;
-}
-
-#ctl00_Conteudo_ctrlCadastroCliente_txtTelResDDD,
-#ctl00_Conteudo_ctrlCadastroCliente_txtDDDCom_PF,
-#ctl00_Conteudo_ctrlCadastroCliente_txtCelDDD{
-	width: 40px !important;
-}
-
-.cadastro .grp .formato,
-.cadastro .grp .exp,
-.cadastro .grp .thickbox,
-.cadastro .grp .nao-cep{
-	padding-top: 7px !important;
-	display: inline-block !important;
-	
-	font-size: 11px !important;
-	color: #333 !important;
-}
-
-.fAvisos p{
-	padding: 10px 20px;
-	background: #f5f5f5;
-}
-
-.fCheck span{
-	width: 
-}
-
-#ctl00_Conteudo_ctrlCadastroCliente_bntNewUserAdd{
-	padding: 7px 0;
-	width: 113px;
-	border: none;
-	background: #00d00f;
-	
-	font-size: 18px;
-	font-weight: bold;
-	color: #fff;
-	text-shadow: 0 0 2px #999;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-}
-
-.fRadio label{
-	width: auto !important;
-	min-width: 140px;
-}
-
-.grp.fRadio.fSexo .main{
-	width: 190px !important;
-}
-
-.grp.fCheck label{
-	margin-top: 10px;
-	float: none;
-	width: 100% !important;
-}
-
-/*#ctl00_TopBar_TopBar1_divPassos{
-	margin: 20px 30px 0 0;
-	float: right;
-}
-
-#ctl00_TopBar_TopBar1_divPassos ul,
-#ctl00_TopBar_TopBar1_divPassos li{
-	display: block;
-	overflow: hidden;
-}
-
-#ctl00_TopBar_TopBar1_divPassos li{
-	height: 58px;
-	float: left;
-	text-indent: -999px;
-}*/
-
-/*#ctl00_TopBar_TopBar1_liIdentificacao{
-	width: 175px;
-	background: url(/arquivos/sprite-step.jpg) 0 0 no-repeat;
-}
-
-#ctl00_TopBar_TopBar1_liEntregaEmbalagem{
-	width: 275px;
-	background: url(/arquivos/sprite-step.jpg) -175px 0 no-repeat;
-}
-
-#ctl00_TopBar_TopBar1_liPagamento{
-	width: 175px;
-	background: url(/arquivos/sprite-step.jpg) -450px 0 no-repeat;
-}*/
 
 
 
@@ -505,44 +185,44 @@ img{border:none;}
 em{font-style:normal;}
 fieldset{border:none;}
 
-body{font-family: 'Droid Sans', sans-serif;font-size:11px;background: url(/arquivos/bg_loja.png);}
+body{font-family: 'Droid Sans';font-size:11px;background: url(/arquivos/bg_loja.png);}
 
 #container, .login .mainContentWrapper{width: 982px;margin: 0 auto;}
 #all{width:982px;float:left;margin-bottom: 20px;}
 
 .content{background: #FFF;margin-top: 20px ;overflow: hidden;padding: 15px;width: 952px;color:#333333;font-size: 12px;clear:both;}
 
-.fitext, select{background:url(/arquivos/txt_fundo.jpg) no-repeat left top;border:1px solid #ebebeb;font-size:12px;padding:5px;width:355px;}
+.fitext, select, .giftlistsearchul input[type="text"], .fipassword, .giftlistul input[type="text"], textarea{background:url(/arquivos/txt_fundo.jpg) no-repeat left top;border:1px solid #ebebeb;font-size:12px;padding:5px;width:355px;font-family: 'Droid Sans';}
 #ctl00_Conteudo_txtCpfCnpj{width:112px;}
 #ctl00_Conteudo_txtCep{width:39px;}
 #ctl00_Conteudo_txtCepSufixo{width:30px;}
 
-.bt{background:#e1e1e1;border:none;padding:10px 15px;color:#333333 !important;text-transform:uppercase;text-decoration:none;font-weight:bold;font-size:13px !important;cursor:pointer;text-shadow:2px 2px 1px #FFF;-moz-text-shadow:2px 2px 1px #FFF;-webkit-text-shadow:2px 2px 1px #FFF;}
+.bt, .giftlistsearchul input[type="button"], #giftlistsave{background:#e1e1e1;border:none;padding:10px 15px;color:#333333 !important;text-transform:uppercase;text-decoration:none;font-weight:bold;font-size:13px !important;cursor:pointer;text-shadow:2px 2px 1px #FFF;-moz-text-shadow:2px 2px 1px #FFF;-webkit-text-shadow:2px 2px 1px #FFF;}
 
-.mainContentWrapper .bottomSearchWrapper, .manutencao-conta .outras-opcoes{display:none;}
+.mainContentWrapper .bottomSearchWrapper, .manutencao-conta .outras-opcoes, .meus-pedidos #ctl00_TopBar_ctlTopBar_lnkHome, .meus-pedidos #ctl00_TopBar_ctlTopBar_pnlTopBarAssincrono, .meus-pedidos-detalhes #ctl00_TopBar_TopBar2_lnkHome, .meus-pedidos-detalhes #ctl00_TopBar_TopBar2_pnlTopBarAssincrono, .listas .giftlistsearch-title, .lstas .giftlistsearch-title{display:none;}
 
 .manutencao-conta .esqueci-mudou, .manutencao-conta .esqueci-senha{padding:0 15px;}
 
-.home #content, .departamento #content, .categoria #content{float:left;width:776px;}
-.busca-vazio{float: left;font-weight: bold;margin-top: 15px;text-align: center;width: 776px;font-size:13px;}
+.home #content, .departamento #content, .categoria #content{float:left;width:793px;/*width:776px;*/}
+.busca-vazio{float: left;/*font-weight: bold;*/margin-top: 15px;text-align: center;width: 776px;font-size:13px;}
 
-/*.content h2{background: url(/arquivos/titulos_fundo.jpg) repeat-x scroll left top transparent;color: #333333;font-size: 18px;font-weight: bold;margin-bottom: 10px;padding: 9px 15px;text-shadow:2px 2px 1px #FFF;-moz-text-shadow:2px 2px 1px #FFF;-webkit-text-shadow:2px 2px 1px #FFF;}
-*/
 .wrapVitrine, .produto .container.box{background:#FFF;padding: 15px;margin-bottom: 10px;}
-.content h2, #sideBar h2, .navigator h5, .wrapVitrine h3.title, .produto .container.box h2{background: url(/arquivos/titulos_fundo.jpg) repeat-x scroll left top transparent;margin-bottom: 10px;padding: 9px 15px;color: #000000;font-size: 17px;font-weight: bold;text-transform: uppercase;text-shadow:2px 2px 1px #FFF;-moz-text-shadow:2px 2px 1px #FFF;-webkit-text-shadow:2px 2px 1px #FFF;}
+.content h2, #sideBar h2, .navigator h5, .wrapVitrine h3.title, .produto .container.box h2, .listas #content h2, .lstas #content h2, .minha-conta .area-3-2-3 h3{background: url(/arquivos/titulos_fundo.jpg) repeat-x scroll left top transparent;margin-bottom: 10px;padding: 9px 15px;color: #333333;font-size: 17px;font-weight: bold;text-transform: uppercase;text-shadow:2px 2px 1px #FFF;-moz-text-shadow:2px 2px 1px #FFF;-webkit-text-shadow:2px 2px 1px #FFF;}
 
-#barra_atendimento_online {background: #CCCCCC;clear: both;color: #333333;padding: 10px 3px;width: 767px;text-align: center;}
-#barra_atendimento_online p {float: left;font-size: 11px;font-weight: bold;}
-#barra_atendimento_online .btn_atendimento_online a {background: none repeat scroll 0 0 #FFCC00;color: #000000;margin-left: 5px;padding: 4px 9px;text-decoration: none;float:right;}
+#barra_atendimento_online {background: #CCCCCC;clear: both;color: #333333;overflow: hidden;padding:5px 10px;width:758px;text-align: center;}
+#barra_atendimento_online p {float: left;font-size: 11px;/*font-weight: bold;*/margin-top: 4px;}
+#barra_atendimento_online .btn_atendimento_online a {background:url(/arquivos/atendimento.jpg) no-repeat top center;width:132px;height:22px;display:block;text-indent:-9999px;margin-left: 5px;text-decoration: none;float:right;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;}
+#barra_atendimento_online .btn_atendimento_online a:hover{background-position:bottom center;}
 
-#topNewsletter {background: url(/arquivos/bg_newsletter.jpg);float: left;width: 982px;height:48px;margin: 10px 0 0;}
+#topNewsletter {background: url(/arquivos/bg_newsletter.jpg);width: 982px;height:48px;margin: 10px 0 0;clear:both;}
 #topNewsletter fieldset {float: left;left: 285px;position: relative;top: 8px;}
 #topNewsletter h3, #topNewsletter p{display:none;}
 #topNewsletter p:after{content:'.';}
 #topNewsletter input {display: block;float: left;margin:3px 5px 0 0;padding: 4px;border:none;}
 #topNewsletter .newsletter-client-name {width: 230px;}
 #topNewsletter .newsletter-client-email {width: 230px;margin-left: 53px;}
-#topNewsletter input#newsletterButtonOK {width: 118px;height: 24px;padding: 0;margin: 3px 0 0 20px;background: url(/arquivos/btn_enviar.jpg) no-repeat top center;text-indent: -99999px;cursor: pointer;}
+#topNewsletter input#newsletterButtonOK {width: 118px;height: 24px;padding: 0;margin: 3px 0 0 20px;background: url(/arquivos/btn_enviar.jpg) no-repeat top center;text-indent: -99999px;cursor: pointer;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;}
+#topNewsletter input#newsletterButtonOK:hover{background-position:bottom center;}
 
 
 
@@ -551,7 +231,7 @@ body{font-family: 'Droid Sans', sans-serif;font-size:11px;background: url(/arqui
 .header{margin: auto !important;width: 982px !important;}
 .header-steps {background: #FFFFFF;overflow: hidden;padding-bottom: 10px;width: 982px;}
 
-#barra_info.barratop{background: none repeat scroll 0 0 #000000;color: #FFFFFF;font-size: 11px;font-weight: bold;padding: 10px 0 9px;text-align: center;width: 100%;}
+#barra_info.barratop{background: none repeat scroll 0 0 #000000;color: #FFFFFF;font-size: 11px;/*font-weight: bold;*/padding: 10px 0 9px;text-align: center;width: 100%;}
 
 h1#title, .header-steps h1{float: left;}
 h1#title a , .header-steps h1 a{background: url(/arquivos/logo_star_point.png) no-repeat top center;color: #000000;float: left;height: 73px;margin: 10px 0 0 20px;width: 279px;text-decoration:none;}
@@ -571,8 +251,8 @@ h1#title a span{}
 #header #header_carrinho{background: none repeat scroll 0 0 black;float: right;height: 22px;width: 638px;margin-top:15px;margin-right:13px;}
 #header #search_cart, .header .searchWrapper{background: #000;float: left;margin: 2px;}
 #search_cart label, #search_cart legend, #search_cart select, .header .searchWrapper label, .header .searchWrapper legend, .header .searchWrapper  select{display:none;}
-#search_cart .fulltext-search-box, .header .searchWrapper .fitext{background: none repeat scroll 0 0 #FFFFFF;border: medium none;float: left;padding: 1px 5px;width: 160px;font-size: 14px;}
-#search_cart .btn-buscar, .header .searchWrapper .fibutton{border: none;background: url(/arquivos/btn_search.png) no-repeat top center;display: block;text-indent: -9999px;width: 17px;height: 18px;float: left;cursor:pointer;}
+#search_cart .fulltext-search-box, .header .searchWrapper .fitext{background: none repeat scroll 0 0 #FFFFFF;border: medium none;float: left;padding: 1px 5px;width: 160px;font-size: 13px;height: 16px;}
+#search_cart .btn-buscar, .header .searchWrapper .fibutton{border: none;background: url(/arquivos/btn_search.png) no-repeat top center;display: block;text-indent: -9999px;width: 17px;height: 18px;float: left;cursor:pointer;padding:0;}
 ul#conta{float: right;margin-top: 4px;}
 ul#conta li{border-right: 1px solid #FFFFFF;display: inline;padding: 0 5px;float:left;}
 ul#conta li.first{border-left: 1px solid #FFFFFF;}
@@ -590,13 +270,14 @@ ul#conta a:hover{text-decoration:underline;}
 
 /* ______ MENU ______ */
 
-#menu{float: right;height: 25px;margin: 10px 13px 0 0;}
+#menu{float: right;height: 25px;margin: 10px 13px 0 0;overflow:hidden;}
 #menu .brandFilter {display: none!important;}
 #menu a{color:#000;}
 #menu .separator {width: 1px;height: 15px;background: black;float: left;margin: 5px 2px 0 2px;}
 #menu h3 {background: url(/arquivos/bg_h3_menu.jpg) repeat 0 0px;float: left;}
 #menu h3:hover a {color: #FC0;}
-#menu h3 a{background-position:right -70px; font-size:11px;font-weight:bold;float:left;padding:6px 12px 5px 12px;text-decoration:none;}
+#menu h3 a{font-size:11px;/*font-weight:bold;*/float:left;padding:6px 12px 5px 12px;text-decoration:none;}
+#menu h3 > a{position:relative;clear:both;top:0;}
 #menu h3 a:hover{text-decoration:none;}
 #menu h3:hover ul li a {color: white;}
 #menu h3:hover ul li a:hover{text-decoration:underline;}
@@ -606,17 +287,11 @@ ul#conta a:hover{text-decoration:underline;}
 #menu h3:hover > ul {display:block;}
 #menu ul li{float: left;margin:5px 0;}
 
-/* n sei */
-/*#menu .Cores, #menu .Tamanhos {display: none;}
-#menu h3 a, #linkVipClub{}
-#menu h3 a, #linkVipClub{font-weight:bold;float:left;padding:6px 14px 5px 10px;}
-#menu ul .lista-completa{border-top:1px dashed #fff;margin-top:8px;padding-top:2px;}
-#menu #linkVipClub{color:#ededed;float:right;padding-left:8px;padding-right:11px;}*/
-
 #menu01{float: right;margin: 16px 13px 0 0;}
 #menu01 #ctl00_TopBar_TopBar1_rptDepartamento_ctl00_liDepartamento{border-left:0;}
 #menu01 li{border-left: 1px solid #000000;float: left;margin-left: 2px;padding-left: 2px;}
-#menu01 li a{color: #000000;font-weight: bold;padding:6px 12px;text-decoration: none;}
+#menu01 li:first-child {border-left: medium none;}
+#menu01 li a{color: #000000;/*font-weight: bold;*/padding:6px 12px;text-decoration: none;}
 #menu01 li.menu-outlet a{border: none;}
 #menu01 li a:hover{background: black;color: #fcd300;}
 
@@ -625,35 +300,71 @@ ul#conta a:hover{text-decoration:underline;}
 /* ______ HOME ______ */
 
 /* _ CAROUSEL _ */
-#brands {margin: 10px 0 0;width: 982px;float: left;height: 75px;clear:both;}
+.carousel{width: 982px;height: 64px;margin: 0 auto;position: relative;clear:both;margin:10px 0;}
+.carousel .carousel_container{width: 888px;height: 64px;margin: 0 auto;overflow: hidden;padding: 0 47px;position: relative;}
+.carousel ul{height: 64px;width: 1980px;background:#FFF;}
+.carousel ul li{width: 148px;height: 64px;display: block;float: left;position: relative;}
+.carousel ul li a{width: 148px;height: 64px;background: #FFF;display: block;color: #fff;}
+.carousel ul li img{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;}
+.carousel ul li img:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);-moz-opacity:1.0;-khtml-opacity: 1.0;opacity: 1.0;}
+.carousel .carousel_right, .carousel_left{position: absolute;width: 47px;height: 64px;display: block;text-indent: -9999px;cursor:pointer;z-index:20;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;}
+.carousel .carousel_left{top: 0px;left:0px;background: url(btn_jcarousel.png) no-repeat 0 0 #FFFFFF;}
+.carousel .carousel_left:hover{background-position:-48px 0;}
+.carousel .carousel_right{top: 0px;right:0px;background: url(btn_jcarousel.png) no-repeat -144px 0 #FFFFFF;}
+.carousel .carousel_right:hover{background-position:-96px 0;}
+.carousel .disable{display: none;}
+/*#brands {margin: 10px 0 0;width: 982px;float: left;height: 75px;clear:both;}
 #brands li {display: block;list-style: none;width: 148px;height: 64px;float: left;}
 #brands .box-banner {float: left;}
 #brands .box-banner a {background: white;display: block;}
 #brands .box-banner a img {opacity: 0.5;}
 #brands .box-banner a img:hover {opacity: 1;}
-.brandFilter h3, #lojasEsperiais h3{background: black;color: #FC0;font-size: 13px;font-weight: bold;text-transform: uppercase;padding: 5px;line-height: 1;margin: 5px 0;}
+.brandFilter h3, #lojasEsperiais h3{background: #000000;color: #FC0;font-size: 13px;font-weight: bold;text-transform: uppercase;padding: 5px;margin: 5px 0;}
 #brandsList li{padding: 3px 0 3px 5px;}
 #lojasEsperiais li {text-transform: uppercase;}
-/*#brandsList h3, #lojasEsperiais h3 {background: black;color: #FC0;font-size: 13px;font-weight: bold;text-transform: uppercase;padding: 5px;line-height: 1;margin: 5px 0;}
-#brandsList li, #lojasEsperiais li {padding: 3px 0 3px 5px;}*/
-.jcarousel-container.jcarousel-container-horizontal {width: 900px;/*padding: 0 20px;*/padding: 0 24px;margin: 0 auto;}
+.jcarousel-container.jcarousel-container-horizontal {width: 900px;padding: 0 24px;margin: 0 auto;}
 .jcarousel-clip.jcarousel-clip-horizontal {overflow: hidden;width: 879px;margin-left: 8px;}
 .jcarousel-prev.jcarousel-prev-horizontal {position: absolute;top: 0;left: -18px;background: url(/arquivos/btn_jcarousel.png) no-repeat top left;width: 47px;height: 65px;cursor:pointer;}
 .jcarousel-next.jcarousel-next-horizontal {position: absolute;top: 0;right: -18px;background: url(/arquivos/btn_jcarousel.png) no-repeat top right;width: 47px;height: 65px;cursor:pointer;}
+*/
+
+/* _ BANNER1 _ */
+#banner1 #carousel {height: 406px;margin: 0 auto;overflow: hidden;width: 982px;position:relative;}
+#banner1 #slides {height: 406px;overflow: hidden;position: relative;width: 982px;}
+#banner1 #slides ul {position:relative;left:0;top:0;list-style:none;margin:0;padding:0;width:10000px;}
+#banner1 #slides li {float: left;height: 406px;width: 982px;}
+#banner1 #slides li img{width:982px;height:406px;}
+#banner1 #prev {background: url(bg_sliderNavigation.png) no-repeat 0 0;display: block;height: 406px;text-indent: -9999px;width: 42px;z-index: 10;position: absolute;left:0;top:0;cursor:pointer;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;}
+#banner1 #prev:hover {background-position:-43px 0;}
+#banner1 #next {background: url(bg_sliderNavigation.png) no-repeat -129px 0;display: block;height: 406px;text-indent: -9999px;width: 42px;z-index: 10;position: absolute;right:0;top:0;cursor:pointer;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;}
+#banner1 #next:hover{background-position:-87px 0;}
+#banner1 .clear {clear:both}
+#banner1 #carousel::selection, #banner1 #slides::selection, #banner1 ul::selection, #banner1 li::selection, #banner1 a::selection, #banner1 img::selection{-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+
+/* _ BANNER2 _ */
+#banner2 #carousel {height: 315px;margin: 0 auto;overflow: hidden;width: 793px;position:relative;}
+#banner2 #slides {height: 315px;overflow: hidden;position: relative;width: 793px;}
+#banner2 #slides ul {position:relative;left:0;top:0;list-style:none;margin:0;padding:0;width:10000px;}
+#banner2 #slides li {float: left;height: 315px;width: 793px;}
+#banner2 #slides li img{width: 793px;height: 315px;}
+#banner2 #prev {background: url(bg_sliderNavigation.png) no-repeat 0 -47px;display: block;height: 315px;text-indent: -9999px;width: 42px;z-index: 10;position: absolute;left:0;top:0;cursor:pointer;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;}
+#banner2 #prev:hover {background-position:-43px -47px;}
+#banner2 #next {background: url(bg_sliderNavigation.png) no-repeat -129px -47px;display: block;height: 315px;text-indent: -9999px;width: 42px;z-index: 10;position: absolute;right:0;top:0;cursor:pointer;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;}
+#banner2 #next:hover{background-position:-87px -47px;}
+#banner2 .clear {clear:both}
+#banner2 #carousel::selection, #banner2 #slides::selection, #banner2 ul::selection, #banner2 li::selection, #banner2 a::selection, #banner2 img::selection{-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 
 /* _ SIDEBAR _ */
-#sideBar {float: left;margin: 0 10px 0 0;background: #fff;padding: 15px;width:166px;}
+#sideBar {float: left;margin: 0 10px 0 0;background: #fff;padding: 15px;width:149px;/*width:166px;*/}
 #sideBar .menu-departamento h3 {font-weight: bold;}
 #sideBar .menu-departamento a, #sideBar #lojasEsperiais a, #sideBar .brandFilter a{color:#000;text-decoration:none;}
+
 #sideBar .menu-departamento a:hover, #sideBar #lojasEsperiais a:hover, #sideBar .brandFilter a:hover{text-decoration:underline;}
-/*#sideBar .menu-departamento ul, #sideBar #lojasEsperiais ul, #sideBar .brandFilter ul{padding-left: 15px;}*/
 #sideBar .menu-departamento ul, #sideBar #lojasEsperiais ul{padding-left: 15px;margin-bottom:10px;}
 #sideBar .brandFilter ul{padding-left: 15px;}
 #sideBar .sideBarDepartmentNavigator .Cores, #sideBar .sideBarDepartmentNavigator .Tamanhos {display: none;}
-#sideBar #sideInstitucional a, #sideBar #sideServicos a{font-size:12px;/*line-height:1.7;*/}
+#sideBar #sideInstitucional a, #sideBar #sideServicos a{font-size:12px;}
 #sideBar h2{font-size:13px;font-weight:bold;}
-/*#topNewsletter p, #sideBar h2, .navigator h3, .navigator h5, .flag.lancamento, .vitrine h2{font-size:13px;font-weight:700;}*/
-/*#sideBar h2, .navigator h5{background: url(/arquivos/bg_titles.png);padding: 15px;margin-bottom:9px;font-weight: bold;text-transform: uppercase;color:#000;font-size:17px;text-shadow: 0px 2px 0px #fff;}*/
 #sideBar .linkList a{font-size:10px;}
 
 
@@ -680,6 +391,37 @@ ul#conta a:hover{text-decoration:underline;}
 .login ul.vantagens li{margin:3px 0;float:left;}
 .login .criar-conta{clear:both;}
 .login .criar-conta a{float:right;}
+
+
+
+/* ______ CADASTRO ______ */
+
+.cadastro-cliente #txtCadastroClienteDadosInfo{padding-left:10px;font-size:13px;margin:10px 0 20px 0;}
+.cadastro-cliente .frmTipoPessoa, .cadastro-cliente .frmPessoaFisica, .cadastro-cliente .frmPessoaDadosAcesso, .cadastro-cliente .frmPessoaJuridica{border-bottom: 1px dotted #999999;padding:0 10px 10px 10px;}
+.cadastro-cliente .frmTipoPessoa legend span{font-size:13px;}
+.cadastro-cliente .frmPessoaFisica legend span, .cadastro-cliente .frmPessoaDadosAcesso legend span, .cadastro-cliente .areaAvisos legend span, .cadastro-cliente .frmPessoaJuridica legend span {text-decoration:none;font-size:14px;}
+.cadastro-cliente .content label{float: left;margin-top: 2px;width: 190px;}
+.cadastro-cliente .content label, .cadastro-cliente .content a, .cadastro-cliente .content .exp, .cadastro-cliente .content .formato{font-size: 13px;margin-top: 8px;}
+.cadastro-cliente .frmTipoPessoa label, .cadastro-cliente label.sexo-m, .cadastro-cliente label.sexo-f {margin-right: 26px;}
+.cadastro-cliente .ficheckbox{margin-top:8px;}
+.cadastro-cliente .frmPessoaFisica, .cadastro-cliente .frmPessoaDadosAcesso, .cadastro-cliente .frmPessoaJuridica{margin-top:10px;}
+.cadastro-cliente .grp{margin-top: 5px;overflow: hidden;}
+.cadastro-cliente .frmPessoaFisica a, .cadastro-cliente .frmPessoaDadosAcesso a, .cadastro-cliente .nao-cep {color: #333333;font-size: 11px !important;text-decoration: underline;}
+.cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCpf, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtEmailConfirmacao, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtSenha, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtDataNascDia, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtDataNascMes, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtTelResDDD, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtDDDCom_PF, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCelDDD, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtDataNascAno, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtDDDCom, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCep1Com{margin-right:10px;}
+.cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCpf{width:185px;}
+.cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCep1.fitext, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCep1Com.fitext{width:60px;}
+.cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCep2.fitext, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCep2Com.fitext{width:30px;}
+.cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtTelRes, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtTelCom_PF, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtCel, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtTelCom{width:130px;}
+.cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtSenha, .cadastro-cliente #ctl00_Conteudo_ctrlCadastroCliente_txtConfirmacaoSenha{width:120px;}
+.cadastro-cliente .areaAvisos{border-top:1px dotted #999999;margin-top:10px;padding:10px;}
+.cadastro-cliente .areaAvisos label {display: block;float: none;margin-top: 6px;width: auto;}
+.cadastro-cliente .areaAvisos legend, .cadastro-cliente .areaAvisos .fAvisos{float:left;font-size:13px;}
+.cadastro-cliente .areaAvisos p{padding:10px 20px;background:#f5f5f5;}
+.cadastro-cliente .areaAvisos a{color:#333333;text-decoration:underline;}
+.cadastro-cliente .continuar-usuario{float:left;margin-left:10px;}
+.cadastro-cliente .continuar-usuario input{background:#4CCC00;color:#FFF !important;text-shadow:none;-moz-text-shadow:none;-webkit-text-shadow:none;}
+.cadastro-cliente .frmPessoaJuridica legend span{font-size:14px;font-weight:lighter;}
+.cadastro-cliente .aviso-erro{border: 1px solid #FF0000;margin: 10px;padding: 10px;}
 
 
 
@@ -722,18 +464,18 @@ ul#conta a:hover{text-decoration:underline;}
 
 .produto .container .box-left{background: #FFFFFF;float: left;height: 392px;overflow: hidden;padding: 10px;position: relative;width: 420px;}
 .produto .container .box-left img{display: block;max-width: 100%;}
-.produto .container .box-left .thumbs{bottom: 0;left: 5px;position: absolute;width: 440px;}
+.produto .container .box-left .thumbs{bottom: 0;left: 5px;position: absolute;width: 435px;}
+.produto .container .box-left .thumbs li{float: left;width: 100px;height: 100px;margin: 0 5px 5px 0;}
+.produto .container .box-left .thumbs li a {display: block;height: 100px;}
 .produto .container .box-left .thumbs img{border: 1px solid #CCCCCC;float: left;margin-left: 5px;width: 98px;}
 
 .produto .container .box-right{width: 530px;height: auto;overflow: hidden;float: right;}
 .produto .container .box{padding: 10px;background: #fff;}
 
-.produto .container .box .brandName, .produto .container .box h1{/*display: block;height: auto;overflow: hidden;*/width:100%;text-align: center;}
+.produto .container .box .brandName, .produto .container .box h1{width:100%;text-align: center;}
 .produto .container .box h1{font-size: 16px;margin-bottom: 25px;text-transform: uppercase;}
-.produto #productPrice{padding: 10px;width: 306px;overflow: hidden;background: #ebebeb;float: left;line-height:14px;}
+.produto #productPrice{padding: 10px;width: 306px;overflow: hidden;background: #ebebeb;float: left;}
 .produto .buy-button{height: 42px;background: url(/arquivos/btn-buy.jpg) no-repeat center #4ccc00;text-indent: -9999px;display:block;clear:both;}
-
-/*.produto .all .container, .all .container .box, .all .container .line{width: auto;height: auto;overflow: hidden;}*/
 
 .produto .all .container .box .box-banner{padding: 4px 0;background: #ebebeb;float: right;}
 .produto .container .prateleira{padding: 10px;width: auto;height: auto;overflow: hidden;}
@@ -743,7 +485,7 @@ ul#conta a:hover{text-decoration:underline;}
 .produto .descricao-preco em{float:left;}
 .produto .descricao-preco em.valor-dividido{clear:both;}
 .produto .descricao-preco em.economia-de, .produto .descricao-preco em.valor-de{display: none;}
-.produto .descricao-preco em.valor-por strong{font-size: 20px;color: #bababa;}
+.produto .descricao-preco em.valor-por strong{font-size: 16px;color: #bababa;}
 .produto .descricao-preco em.valor-dividido strong{font-size: 22px;color: #646464;}
 
 .produto .box-twitter, .produto .box-pinterest, .produto .box-facebook, .produto .box-gPlus{width: 127px;height: auto;overflow: hidden;float: left;}
@@ -798,11 +540,13 @@ ul#conta a:hover{text-decoration:underline;}
 .carrinho .carrinhoTable .excluir a {background: url(/arquivos/ico-delete.jpg) no-repeat center;display: block;text-indent: -9999px;width: 17px;height: 17px;}
 .carrinho .carrinhoTable .texto-vale-presente label, .carrinho .carrinhoTable .texto-cepline label{display:none;}
 .carrinho .carrinhoTable .texto-vale-presente legend, .carrinho .carrinhoTable .texto-cepline legend{float: left;margin-right: 5px;margin-top: 5px;text-align: left;width: 265px;}
-.carrinho .carrinhoTable .texto-vale-presente input.fitext{width: 153px;}
+.carrinho .carrinhoTable .texto-vale-presente input.fitext{width: 153px;text-align:left;text-transform:uppercase;}
 .carrinho .carrinhoTable .texto-vale-presente input.bt, .carrinho .carrinhoTable .texto-cepline input.bt{font-weight: normal;padding: 4px 5px;}
 .carrinho .carrinhoTable .vale-presente, .carrinho .carrinhoTable .txt-frete, .carrinho .carrinhoTable .valor-total{text-align:right;}
 .carrinho .carrinhoTable .texto-vale-presente div.grp{float: left;}
 .carrinho .carrinhoTable .grp.fMulti.fCep{text-align:left;}
+.carrinho .carrinhoTable .msgValCEP, .carrinho .carrinhoTable .reward-check{float:left;}
+.carrinho .carrinhoTable #palerta.alerta{clear: both;color: #FF0000;float: left;margin-top: 10px;text-align: left;}
 .carrinho .carrinhoTable tr.valor-parcelado .valor-parcelado{text-align:right;}
 .carrinho .carrinhoTable .preco-total, .carrinho .carrinhoTable .frete-gratis, .carrinho .carrinhoTable .valor{text-align:left;}
 
@@ -819,16 +563,16 @@ ul#conta a:hover{text-decoration:underline;}
 .confirmacao-compra .steps{background: url(/arquivos/sprite-step.jpg) no-repeat 0 -188px; width: 625px; height: 55px;}
 
 .endereco-compra .endereco h2{display:none;}
+.checkout.endereco-compra h2{display:block !important;}
 .endereco-compra .lista-endereco{margin-bottom:10px;}
 .endereco-compra .lista-endereco legend{display:none;}
 .endereco-compra ul.address-list{overflow: hidden;width: 100%;}
-.endereco-compra ul.address-list > li{float: left;margin: 10px 20px 0 0;padding-right:10px;border-right:1px dotted #999999;width:205px;}
+.endereco-compra ul.address-list > li, ul.address-list-select li{float: left;margin: 10px 20px 0 0;padding-right:10px;border-right:1px dotted #999999;width:205px;}
 .endereco-compra ul.address-list li .wrapper{overflow:hidden;}
 .endereco-compra .select-address a {text-decoration: none;text-transform:capitalize;float:left;}
 .endereco-compra .wrapper address{text-transform:uppercase;font-size:14px;margin:10px 0;clear:both;float:left;}
 .endereco-compra .wrapper p{text-transform:uppercase;font-size:12px;color:#333333;}
 .endereco-compra .bts .editar a{float:left;clear:both;}
-
 .endereco-compra #ctl00_Conteudo_ctrlEndereco_updEndereco div.cadastro-endereco{margin-top:15px;}
 .endereco-compra .cadastro-endereco h3{font-size:17px;font-weight:bold;}
 .endereco-compra .identificacao{border-top: 1px dotted #999999;font-size: 13px;margin-top: 5px;padding-top: 5px;}
@@ -836,20 +580,12 @@ ul#conta a:hover{text-decoration:underline;}
 .endereco-compra  label{color: #333333;float: left;margin-top: 5px;width: 190px;}
 .endereco-compra .grp{margin-top:5px;overflow:hidden;}
 .endereco-compra #ctl00_Conteudo_ctrlEndereco_lnkDuvidaCEPPJ{display:none;}
-.endereco-compra #ctl00_Conteudo_ctrlEndereco_txtCepPrefixo{width:125px;}
-.endereco-compra #ctl00_Conteudo_ctrlEndereco_txtCepSufixo{width:80px;}
+.endereco-compra #ctl00_Conteudo_ctrlEndereco_txtCepPrefixo{width:36px;}
+.endereco-compra #ctl00_Conteudo_ctrlEndereco_txtCepSufixo{width:22px;}
 .endereco-compra #ctl00_Conteudo_ctrlEndereco_txtNumero{width:60px;}
 .endereco-compra select.estado, .endereco-compra select.tipo-endereco{width:367px;}
 .endereco-compra fieldset.bts{clear: both;float: left;margin-top: 5px;padding-left: 397px;}
-.endereco-compra fieldset.bts a, .endereco-compra fieldset.bts input{font-family: 'Droid Sans', sans-serif;}
-
-/*.endereco-compra .content label{float: left;margin-top: 2px;width: 190px;color:#6C6C6C;}
-.endereco-compra .bottomSearchWrapper {display:marker;clear:both;}
-.endereco-compra #ctl00_Conteudo_ctrlEndereco_updEndereco{font-size:14px;}
-.endereco-compra fieldset.bts{padding-left:415px;margin-top:5px;clear:both;float:left;}
-.endereco-compra fieldset.cadastro-endereco span{color:#F00;}
-.endereco-compra fieldset.cadastro-endereco span.ex-endereco{color:#333333;}
-.endereco-compra #ctl00_Conteudo_Busca_btnOK{width: 30px;height: 33px;background: none;border: none;cursor:pointer;text-indent: -99999px;position: relative;top: -2px;left: -32px;}*/
+.endereco-compra fieldset.bts a, .endereco-compra fieldset.bts input{font-family: 'Droid Sans';}
 
 .frete .fretes h3, .frete .fretes legend{display:none;}
 .frete .Agendamento{margin:10px 0;}
@@ -858,11 +594,194 @@ ul#conta a:hover{text-decoration:underline;}
 .frete fieldset.bts ul{float:right;}
 .frete fieldset.bts ul li{display:inline;}
 
+.forma-pagamento .dados-pagamento{float:left;width:100%;}
+.forma-pagamento .dados-pagamento h3, .forma-pagamento .pagamento p.tit strong{font-weight:bold;font-size:14px;}
+.forma-pagamento .dados-pagamento .wrapper{overflow:hidden;}
+.forma-pagamento .dados-pagamento table.valor-compra{float: left;font-size: 14px;}
+.forma-pagamento .dados-pagamento table.valor-compra tr td{font-weight:bold;}
+.forma-pagamento .dados-pagamento table.valor-compra tr th{padding-right: 20px;}
+.forma-pagamento .dados-pagamento tr.valor-total{background:#f5f5f5;}
+.forma-pagamento .dados-pagamento table.valor-compra tr td, .forma-pagamento .dados-pagamento table.valor-compra tr th{padding:3px;}
+.forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_UpdatePagamentos{border-top: 1px dotted #333333;clear: both;float: left;margin-top: 10px;padding-top: 10px;width: 100%;}
+.forma-pagamento .pagamento > div{clear: both;float: left;margin-top: 20px;width: 100%;}
+.forma-pagamento .pagamento > div h3{font-weight:bold;font-size:14px;}
+.forma-pagamento .pagamento p.tit span{font-size:13px;}
+.forma-pagamento .pagamento-cartao-wrapper legend{display:none}
+.forma-pagamento .pagamento-cartao-wrapper .opc-parcelamento legend{display:block;float: left;margin-top: 7px;}
+.forma-pagamento .lista-formas-pagamento{background: #F2F2F2;float: left;padding: 10px;}
+.forma-pagamento .lista-formas-pagamento li{float: left;margin: 0 10px;}
+.forma-pagamento .lista-formas-pagamento li input, .forma-pagamento .lista-formas-pagamento li img, .forma-pagamento .forma-pagamento .lista-formas-pagamento li strong{float:left;}
+.forma-pagamento .lista-formas-pagamento li input{margin-top:24px;}
+.forma-pagamento .lista-formas-pagamento li strong{clear:both;margin-left:12px;float:left;}
+.forma-pagamento .lista-formas-pagamento .formapagamento-descricao {clear: both;/*font-weight: bold;*/margin-left: 12px;}
+.forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_DadosFormaPagamamentoCartao1 fieldset {margin: 5px 0;}
+.forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_DadosFormaPagamamentoCartao1{float:left;clear:both;margin-top:10px;}
+.forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_InfoCartao1 fieldset, .forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_DadosFormaPagamamentoCartao1 fieldset {clear: both;float: left;width: 690px;}
+.forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_InfoCartao1 label, .forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_DadosFormaPagamamentoCartao1 legend {float: left;margin-top: 7px;}
+.forma-pagamento input.fitext{float: right;}
+.forma-pagamento .pagamento-cartao-wrapper .opc-parcelamento select{float: right;width:368px;}
+.forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_txtCcMes{margin-left: 207px;width: 55px;}
+.forma-pagamento #ctl00_Conteudo_ctrlFormaPagamento_txtCcAno{width: 65px;}
+.forma-pagamento .info-cartao fieldset label a{display:none;}
+.forma-pagamento .voltar {border-top: 1px dotted #999999;float: left;margin-top: 10px;padding-top: 10px;width: 100%;}
+.forma-pagamento .voltar a{float:left;}
+.forma-pagamento .continuar{float:left;margin-top:15px;}
+.forma-pagamento .continuar input{background:#4CCC00;color:#FFF !important;text-shadow:none;-moz-text-shadow:none;-webkit-text-shadow:none;}
+.forma-pagamento .aviso-erro, .forma-pagamento .mensagem-cartao{color:#F00;margin: 10px 0;}
+
+.finaliza-compra .success.sucess{height: 230px;position: relative;text-align: center;width: 520px;}
+.finaliza-compra .order-number{background: #000000;color: #FFFFFF;padding: 10px;text-align: center;width:265px;}
+.finaliza-compra .order-number span{font-size:18px;font-weight:bold;}
+.finaliza-compra .order-number strong{clear:both;display:block;font-size:26px;font-weight:bold;}
+.finaliza-compra .continuar-comprando a{bottom: 0;left: 165px;position: absolute;}
+.finaliza-compra .congrats, .finaliza-compra #PrazoEntrega, .finaliza-compra .warning, .finaliza-compra #ctl00_Conteudo_pTextoFinalizacao{margin:5px 0;font-weight:normal;}
+
+
+
+/* ______ MINHA CONTA ______ */
+
+.minha-conta .breadcrumb, .listas .breadcrumb, .lstas .breadcrumb{display:none;}
+.minha-conta #tabela_login, .listas #tabela_login, .lstas #tabela_login{width: 982px;margin-top:10px;overflow:hidden;}
+
+.minha-conta #tabela_login .abas, .listas #tabela_login .abas, .lstas #tabela_login .abas{float: left;width: 100%;margin-bottom: 10px;}
+.minha-conta #tabela_login .abas li, .listas #tabela_login .abas li, .lstas #tabela_login .abas li{float:left;margin-right:3px;padding:0 6px 0 0;background:url(/arquivos/abas_fundo.png) no-repeat right center;}
+.minha-conta #tabela_login .abas li a, .listas #tabela_login .abas li a, .lstas #tabela_login .abas li a{color:#000000;cursor:pointer;display:block;font-size:15px;padding:5px 10px;text-decoration:none;font-weight:bold;}
+.minha-conta #tabela_login .abas li a:hover, .minha-conta .abas li.ativo a, .listas #tabela_login .abas li a:hover, .listas .abas li.ativo a, .lstas #tabela_login .abas li a:hover, .lstas .abas li.ativo a{color:#FFD800 !important;background:#000;}
+.listas .abas li.listas.ativo, .lstas .abas li.listas.ativo{color:#FFD800 !important;background:#000 !important;cursor:pointer;display:block;font-size:15px;padding:5px 10px !important;text-decoration:none;font-weight:bold;}
+
+.minha-conta #tabela_login .nav, .listas #tabela_login .nav, .lstas #tabela_login .nav{background: #FFFFFF;float: left;min-height: 304px;padding:15px 10px;width: 172px;}
+.minha-conta #tabela_login .nav h3, .minha-conta #tabela_login .nav h2, .listas #tabela_login .nav h3, .listas #tabela_login .nav h2, .lstas #tabela_login .nav h3, .lstas #tabela_login .nav h2{background: #000;color: #FFCC00;font-size: 13px;font-weight: bold;margin: 5px 0;padding:2px 5px;text-transform: uppercase;}
+.minha-conta #tabela_login .nav ul, .listas #tabela_login .nav ul, .lstas #tabela_login .nav ul{margin-bottom: 10px;}
+.minha-conta #tabela_login .nav li, .listas #tabela_login .nav li, .lstas #tabela_login .nav li{margin:3px 0;}
+.minha-conta #tabela_login .nav a, .listas #tabela_login .nav a, .lstas #tabela_login .nav a{color: #000000;font-size: 13px;text-decoration: none;}
+.minha-conta #tabela_login .nav a:hover, .listas #tabela_login .nav a:hover, .lstas #tabela_login .nav a:hover{text-decoration:underline;}
+
+.minha-conta #tabela_login #content{float:right;}
+.listas #tabela_login #content, .lstas #tabela_login #content, .minha-conta #ctl00_Conteudo_52.area-3-2{clear: none;float: right;margin-top: 0;width: 750px;background: #FFFFFF;color: #333333;font-size: 12px;overflow: hidden;padding: 15px;}
+.minha-conta #tabela_login .content, .listas #tabela_login .content, .lstas #tabela_login .content{clear: none;float: right;margin-top: 0;width: 750px;}
+.minha-conta #tabela_login .tabela-pedidos h3{border-bottom:1px solid #000;margin-top:20px;padding-bottom:5px;color:#000;}
+.minha-conta #tabela_login #orderInfoProductList{width:100%;color:#000;font-size:12px;border-collapse:collapse;}
+.minha-conta #tabela_login #orderInfoProductList tr {border-bottom:1px solid #5d5d5d;}
+.minha-conta #tabela_login #orderInfoProductList th{text-align: center;}
+.minha-conta #tabela_login #orderInfoProductList thead th{font-weight:bold;}
+.minha-conta #tabela_login #orderInfoProductList th.pedido{text-align:left;}
+.minha-conta #tabela_login #orderInfoProductList th, .minha-conta #tabela_login #orderInfoProductList td{border-right:1px solid #5d5d5d;padding:5px;}
+.minha-conta #tabela_login #orderInfoProductList th.links, .minha-conta #tabela_login #orderInfoProductList td.links{border-right:none;}
+.minha-conta #tabela_login #orderInfoProductList .links{text-align: center;}
+.minha-conta #tabela_login #orderInfoProductList .tbLinks a{text-decoration: underline;color:#000;background:#ffd800;border:none;display: block;margin: 2px auto;padding:5px 10px;cursor:pointer;width:90px;font-weight:bold;}
+.minha-conta #tabela_login #orderInfoProductList .tbLinks a.imprimir{background:none !important;}
+
+.minha-conta fieldset.filtrar, .listas fieldset.giftlistsearch{float: left;margin-top: 10px;width: 403px;}
+.minha-conta fieldset.filtrar legend{display:none;}
+.minha-conta fieldset.filtrar .grp, .listas fieldset.giftlistsearch li, .listas .giftlistsku li, .listas .giftlistsku p, .listas .giftlistul li{margin:10px 0;}
+.minha-conta fieldset.filtrar label, .listas fieldset.giftlistsearch span, .listas .giftlistul li span{float: left;margin-top: 5px;width: 190px;font-weight:bold;color:#000;font-size:13px;}
+.minha-conta fieldset.filtrar #ctl00_Conteudo_lstStatusGeral{width: 212px;}
+.minha-conta fieldset.filtrar #ctl00_Conteudo_tbxIdCompra{width:200px;}
+.minha-conta fieldset.filtrar #ctl00_Conteudo_tbxDataDe_txtId{width:55px;margin:0 10px;}
+.minha-conta fieldset.filtrar #ctl00_Conteudo_tbxDataAte_txtId{width:55px;margin-left:10px;}
+.minha-conta fieldset.filtrar .ok input.bt{float:right;background: url(/arquivos/sprite-buttons.png) no-repeat 0 -31px; width: 88px; height: 35px;display:block;text-indent:-9999px;}
+
+.minha-conta #ctl00_Conteudo_52.area-3-2 {font-size: 13px;}
+.minha-conta .area-3-2-3 h4, .minha-conta .area-3-2-5 h3, .minha-conta .area-3-2-10 h3{border-bottom: 1px solid #000000;color: #000000;font-size: 15px;font-weight: normal;margin: 20px 0 5px;padding: 5px 0 5px 5px;clear:both;}
+.minha-conta .area-3-2-1 h2, .minha-conta .area-3-2-3 ul.bts .alterar-senha{display:none;}
+.minha-conta #ctl00_Conteudo_ctl06_btnEditar{background: url(/arquivos/sprite-buttons.png) no-repeat -90px -31px; width: 121px; height: 35px;display:block;text-indent:-9999px;padding:0;clear:both;margin:0;}
+.minha-conta #ctl00_Conteudo_ctl06_btnAlterarSenha, .minha-conta dd a.senha{background: url(/arquivos/sprite-buttons.png) no-repeat 0 -107px !important; width: 201px; height: 36px;display:block;text-indent:-9999px;padding:0;clear:both;margin:0;}
+.minha-conta .informacoes-conta dd a{background: url(/arquivos/sprite-buttons.png) no-repeat 0 -69px; width: 320px; height: 35px;display:block;text-indent:-9999px;padding:0;clear:both;margin:0;}
+.minha-conta div.photo{float:left;background: url(/arquivos/sprite_icons.png) no-repeat -1px -40px; width: 87px; height: 87px;display:block;}
+.minha-conta div.photo span{color:#c2c2c2;}
+.minha-conta div.photo span img{width:87px;height:87px;}
+.minha-conta .addPhoto, .editar-conta .addPhoto{margin-bottom:10px;clear:both;}
+.minha-conta .addPhoto .lnkAddPhoto, .editar-conta .addPhoto .lnkAddPhoto{text-decoration:underline;color:#000;font-size:13px;font-weight:bold;}
+.minha-conta .dados {overflow: hidden;}
+.minha-conta .dados .dados-usuario{font-weight:bold;}
+.minha-conta .dados dt {clear: left;color: #6C6C6C;width: 193px;}
+.minha-conta .dados dt, .minha-conta .dados dd {float: left;margin: 3px 0;}
+.minha-conta .dados dt, .minha-conta .dados dd {float: left;margin: 3px 0;}
+.minha-conta .dados-usuario dd.dNome, .minha-conta .dados-usuario dd.dApelido, .minha-conta .dados-usuario dd.dCpfCnpj, .minha-conta .dados-usuario dd.dCpfCnpj, .minha-conta .dados-usuario dd.dEmail, .minha-conta .dados-usuario dd.dNasc, .minha-conta .dados-usuario dd.dSexo, .minha-conta .dados-usuario dd.dTel, .minha-conta .dados-usuario dd.dCel, .minha-conta .dados-usuario dd.dLink, .minha-conta .dados-usuario dd.dRewardValue {color: #000000;}
+.minha-conta .area-3-2-3 .bts li{margin: 10px 0;}
+.minha-conta .area-3-2-5 dt{color: #000000;font-size: 14px;/*font-weight: bold;*/margin: 15px 0 5px;}
+
+.editar-conta .meus-dados h4, .editar-conta legend, .permission-sel, .nao-altera em{display:none;}
+.editar-conta .meus-dados-alterar fieldset{font-size: 13px;}
+.editar-conta fieldset > p, .editar-conta fieldset > div {margin: 5px 0;}
+.editar-conta .nao-altera span, .editar-conta fieldset > div > label{color: #6C6C6C;float: left;width: 190px;}
+.editar-conta .grp.apelido label, .editar-conta label.nascimento-dia, .editar-conta label.lbl-telefones, .editar-conta .fSite label{margin-top: 5px;}
+.editar-conta #ctl00_Conteudo_chkNoticiasPorEmail, .editar-conta #ctl00_Conteudo_chkNoticiasPorSms{margin-top:2px;}
+.minha-conta span.fSexo label{float: none;margin: 0 20px 0 6px;width: auto;}
+.editar-conta #ctl00_Conteudo_txtApelido, .editar-conta #ctl00_Conteudo_txtURL{width: 260px;}
+.editar-conta #ctl00_Conteudo_txtDtNascimentoDia, .editar-conta #ctl00_Conteudo_txtDtNascimentoMes{width: 20px;}
+.editar-conta #ctl00_Conteudo_txtDtNascimentoAno{width: 30px;}
+.editar-conta ul.bts {float: left;text-align: right;width: 462px;}
+.editar-conta ul.bts li{display:inline;}
+
+.meus-pedidos-detalhes .informacoes-entrega{float:left;}
+.meus-pedidos-detalhes .informacoes-entrega .pedido-numero{background:#000;text-align:center;width:285px;padding:10px 0;}
+.meus-pedidos-detalhes .informacoes-entrega .pedido-numero strong{color:#FFF;font-size:14px;display:block;}
+.meus-pedidos-detalhes .informacoes-entrega .pedido-numero span{color:#FFF;font-size:30px;display:block;}
+.meus-pedidos-detalhes .informacoes-entrega .pedido-data{display:none;}
+.meus-pedidos-detalhes .dados-entrega{background: none repeat scroll 0 0 #E8E8E8;float: left;margin: 10px 0;padding: 10px;width: 265px;}
+.meus-pedidos-detalhes .dados-entrega .numero-entrega{display:none;}
+.meus-pedidos-detalhes .dados-entrega dt{float:left;color:#696969;clear:both;margin-right:5px;}
+.meus-pedidos-detalhes .dados-entrega dd{float:left;color:#000;}
+.meus-pedidos-detalhes .dados-entrega .pedido-status{margin-top:3px;}
+.meus-pedidos-detalhes .dados-entrega #ctl00_Conteudo_rptCompraEntrega_ctl00_lnkCompraEntregaStatusLogTop{padding:3px;background:#d8d8d8;color:#000;font-size:11px;float:left;font-weight:normal;text-shadow:none;-moz-text-shadow:none;-webkit-text-shadow:none;}
+.meus-pedidos-detalhes .descricao-entrega{background: none repeat scroll 0 0 #E8E8E8;float: left;margin: 0 0 10px 0;padding: 10px;width: 265px;clear:both;}
+.meus-pedidos-detalhes .descricao-entrega h4{color:#000;font-weight:bold;}
+.meus-pedidos-detalhes .descricao-entrega p{color:#000;}
+.meus-pedidos-detalhes .descricao-entrega strong{color:#333333;}
+.meus-pedidos-detalhes #ctl00_Conteudo_controleDadosPagamento_fieldsetDadosPagamento{background: none repeat scroll 0 0 #E8E8E8;float: left;margin: 0 0 10px 0;padding: 10px;width: 265px;clear:both;}
+.meus-pedidos-detalhes #ctl00_Conteudo_controleDadosPagamento_fieldsetDadosPagamento > legend{display:none;}
+.meus-pedidos-detalhes #ctl00_Conteudo_controleDadosPagamento_fieldsetDadosPagamento strong{color:#000;}
+.meus-pedidos-detalhes .box-dados-pedido{float:right;width:400px;margin:23px 30px 0 0;}
+.meus-pedidos-detalhes .box-dados-pedido h3, .meus-pedidos-detalhes .endereco-entrega h4{display:none;}
+.meus-pedidos-detalhes .endereco-entrega{font-size:14px;clear:both;}
+.meus-pedidos-detalhes .endereco-entrega dt, .meus-pedidos-detalhes .endereco-entrega dd{margin-top:10px;}
+.meus-pedidos-detalhes .endereco-entrega dt{clear: both;float: left;width: 160px;color:#696969;}
+.meus-pedidos-detalhes .endereco-entrega dd{float:left;color:#000;font-weight:bold;width:240px;}
+.meus-pedidos-detalhes .box-dados-pagamento{display:none;}
+.meus-pedidos-detalhes div.voltar a{display:none;}
+.meus-pedidos-detalhes table.descricao-compra, .lstas table.giftlist-table, .listas table.giftlist-table{clear:both;background:#f1f1f1;width:100%;border-collapse:collapse;text-align:center;font-size:13px;}
+.meus-pedidos-detalhes table.descricao-compra thead, .lstas table.giftlist-table thead, .listas table.giftlist-table thead{font-size:14px;color:#696969;background:#F1F1F1;}
+.meus-pedidos-detalhes table.descricao-compra thead th, .meus-pedidos-detalhes table.descricao-compra thead tr, .lstas table.giftlist-table thead th, .lstas table.giftlist-table thead tr, .listas table.giftlist-table thead th, .listas table.giftlist-table thead tr{border-top:1px solid #bcbcbc;text-align:center;font-weight: normal;padding:0 5px;}
+.meus-pedidos-detalhes table.descricao-compra .descricao-produto{text-align:left;}
+.meus-pedidos-detalhes table.descricao-compra tbody, .meus-pedidos-detalhes tfoot, .listas table.giftlist-table tbody{color:#000;}
+.meus-pedidos-detalhes table.descricao-compra tfoot th, .meus-pedidos-detalhes table.descricao-compra tfoot td, .meus-pedidos-detalhes table.descricao-compra tbody th, .meus-pedidos-detalhes table.descricao-compra tbody td, .listas table.giftlist-table tbody th, .listas table.giftlist-table tbody td{padding-top:5px;padding-bottom:5px;}
+.meus-pedidos-detalhes tfoot{background:#F1F1F1;border-top: 1px solid #BCBCBC;border-bottom: 1px solid #BCBCBC;}
+.meus-pedidos-detalhes tfoot .subtotal{padding-right:99px;font-weight:normal;}
+.meus-pedidos-detalhes tfoot .subtotal, .meus-pedidos-detalhes tfoot .frete, .meus-pedidos-detalhes tfoot .valor-total{text-align:right;}
+.meus-pedidos-detalhes tfoot .frete{padding-right:116px;font-weight:normal;}
+.meus-pedidos-detalhes tfoot .valor-total, .meus-pedidos-detalhes tfoot .valor{font-weight:bold;}
+.meus-pedidos-detalhes tfoot .valor-total{padding-right:81px;}
+.meus-pedidos-detalhes table.descricao-compra tbody th, .meus-pedidos-detalhes table.descricao-compra tbody td, .lstas table.giftlist-table tbody th, .lstas table.giftlist-table tbody td, .listas table.giftlist-table tbody th, .listas table.giftlist-table tbody td{border-top:1px solid #bcbcbc;background:#ffffff;text-align:center;font-weight: normal;padding:0 5px;}
+
+.listas .giftlistsearchul input[type="button"]{float:right;}
+.listas .giftlistsearchul input[type="text"]{width:200px;}
+.listas #giftlisttype{width:367px;}
+.listas fieldset.giftlistsearch span{font-weight:normal !important;}
+.listas .giftlistsearch-result table{clear: both;float: left;margin-top: 10px;width:403px;}
+.listas .giftlisttype{margin-top:0 !important;}
+.listas .giftlistisactive{display:none;}
+.listas .address-list legend span{font-weight:bold;}
+.listas ul.address-list-select{overflow:hidden;}
+.listas ul.address-list-select li {width: 156px;}
+.listas #giftlistform #giftlistsave{float:right;}
+
+.minha-conta.editar-conta .content, .minha-conta.alterar-senha .content{width:952px !important;}
+
+.lstas ul.giftlist-action{float:left;clear:both;width:100%;}
+.listas #content a{font-weight:bold;}
+.listas #content a, .lstas #content a{color:#333;text-decoration:none;font-size:13px;}
+.listas #content a:hover, .lstas #content a:hover{text-decoration:underline;}
+.lstas .giftlistisactive{display:none;}
+.lstas table.giftlist-table{float:left;width:100%;margin-top:20px;}
+.lstas table.giftlist-table thead{}
+
+
 
 /* ______ FOOTER ______ */
 
-.footer{font-family: 'Droid Sans', sans-serif;background: url(/arquivos/footer_fundo.jpg) repeat-x top left;height:394px;width:100%;margin-top:20px;clear:both;}
-#barra_info.barrabottom{color: #FFFFFF;font-size: 11px;font-weight: bold;padding-top: 2px;text-align: center;width: 982px;height:17px;}
+.footer{font-family: 'Droid Sans', sans-serif;background: url(/arquivos/footer_fundo.jpg) repeat-x top left;height:396px;width:100%;margin-top:20px;clear:both;}
+#barra_info.barrabottom{color: #FFFFFF;font-size: 11px;/*font-weight: bold;*/padding-top: 4px;text-align: center;width: 982px;height:17px;}
 .footer #containerFooter{width:982px;padding-top:5px;}
 .footer #history, .footer .history{float:left;width:715px;margin-left:32px;font-size:11px;color:#000;text-transform:uppercase;overflow:hidden;height:101px;position:relative;}
 .footer #history #HistoricoVazio, .footer .history #HistoricoVazio{margin-top:5px;}
@@ -871,7 +790,6 @@ ul#conta a:hover{text-decoration:underline;}
 .footer #history #ulUltimosProdutos, .footer .history #ulUltimosProdutos{margin-right:95px;float:left;}
 .footer #history #ulUltimasBuscas, .footer .history #ulUltimasBuscas{float:left;}
 .footer #history #pLimparHistorico, .footer .history #pLimparHistorico{position:absolute;bottom:0;right:0;}
-/*#ulUltimosProdutos{margin:5px 0 0 24px;}*/
 .footer #history ul, .footer .history ul{float:left;margin-top:3px;}
 .footer #history ul li, .footer .history ul li{text-transform:uppercase;font-size:11px;color:#000;margin:2px 0;float:left;clear:both;}
 .footer #history a, .footer .history a{color:#000;text-decoration:none;text-transform:uppercase;font-size:11px;}
@@ -879,9 +797,9 @@ ul#conta a:hover{text-decoration:underline;}
 .footer #social{float:right;width:86px;margin-right:124px;margin-top:34px;}
 .footer #social h3, .footer #footerServices h3, .footer #footerInstitutional h3, .footer #footerVipClub h3, .footer #footerPagamento h3, .footer #history h3{font-size: 11px;color:#000;font-weight:bold;text-transform:uppercase;}
 .footer #social #twitter{background: url(/arquivos/sprite_social.png) -39px 0 no-repeat;-webkit-transition: .2s;-moz-transition: .2s;transition: .2s;height:38px;width:38px;float:left;margin-top:15px;}
-.footer #social #twitter:hover{background: url(/arquivos/sprite_social.png) -39px -39px no-repeat;}
-.footer #social #facebook{background: url(/arquivos/sprite_social.png) 0 0 no-repeat;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;height:38px;width:38px;float:right;margin-top:15px;}
-.footer #social #facebook:hover{background: url(/arquivos/sprite_social.png) 0 -39px no-repeat;}
+.footer #social #twitter:hover{background-position:-39px -39px;}
+.footer #social #facebook{background: url(/arquivos/sprite_social.png) 0 0 no-repeat;height:38px;width:38px;float:right;margin-top:15px;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;}
+.footer #social #facebook:hover{background-position:0 -39px;}
 .footer #social a{text-decoration:none;}
 .footer #footer{clear: both;float: left;margin-top: 40px;margin-left:32px;width: 100%;}
 .footer #footerServices{float:left;margin-right:36px;}

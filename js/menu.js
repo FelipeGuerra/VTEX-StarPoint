@@ -51,7 +51,12 @@ $(document).ready(function() {
 	$('#menu h3').each(function(){
 		$(this).after('<span class="separator"></span>');
 	});
+	
+	$("#menu h3 > a").each(function(){
+		$(this).clone().insertAfter(this);
+	});
+	
 	/*$('#menu div > span').last().remove();*/
-	$('#menu h3.outlet').last().next('span').remove()
+	$('#menu h3.outlet').last().next('span').remove();
     
 });
