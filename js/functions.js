@@ -14,6 +14,8 @@ $(document).ready(function() {
 	$(".sub:eq(1)").css( "display" , "none" );
 	
 	$('.departamento .pager.top').first().appendTo('.departamento .sub');
+	$('.categoria .pager.top').first().appendTo('.categoria .sub');
+	$('.resultado-busca .pager.top').first().appendTo('.resultado-busca .sub');
 	
 	// Barra suspensa superior
 	$('#carrinho-barra').hide();

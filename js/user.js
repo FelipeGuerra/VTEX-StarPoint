@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('head').append('<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" />')
+	$('head').append('<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" />')
 	
 	$("body.checkout .searchWrapper:last, body.minha-conta .searchWrapper:last, body.fale-conosco .searchWrapper:last, body.sku .searchWrapper:last").addClass('bottomSearchWrapper');
 	if ($("body").attr("class") == "carrinho"){
