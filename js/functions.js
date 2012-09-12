@@ -12,7 +12,36 @@ $(document).ready(function() {
 	
 	//esconde os elementos do .sub antes do footer
 	$(".sub:eq(1)").css( "display" , "none" );
-		
+	
+	$('.departamento .pager.top').first().appendTo('.departamento .sub');
+	
+	// Barra suspensa superior
+	$('#carrinho-barra').hide();
+	$(window).scroll(function(){
+		if($(window).scrollTop() < 20){
+			$('#carrinho-barra').slideUp('fast');
+		}else{
+			$('#carrinho-barra').slideDown('fast');
+		}
+	});
+	$('#carrinho-barra .seta').click(function(){
+		$('#carrinho-barra *').fadeOut(350);
+		$('#carrinho-barra').animate({"top": "-=35px"}, 500, 'linear' ,function(){
+			$('#carrinho-barra .seta2 *').fadeIn(350);
+			$('#carrinho-barra .seta2').slideDown(300);
+		});
+	});
+	//$('#carrinho-barra select')
+	$('#carrinho-barra .seta2').click(function(){
+		$('#carrinho-barra .seta2').fadeOut(250);
+		$('#carrinho-barra').animate({"top": "+=35px"}, 500, 'linear' ,function(){
+			$('#carrinho-barra :not(.seta2,script,legend,label,select)').fadeIn('slow');
+			$('#carrinho-barra #carrinho #menu2').hide();
+		});
+	});
+	$('.hideCarrinhoMenu').click(function(){
+		$('#carrinho-barra #carrinho #menu2').slideToggle('slow');
+	});
 		
 	$(document).ajaxComplete(function(event,request, settings){
 		//centraliza o pager bottom no centro
