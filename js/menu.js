@@ -54,6 +54,7 @@ $(document).ready(function() {
 	
 	$("#menu h3 > a").each(function(){
 		$(this).clone().insertAfter(this);
+		$(this).next('a').addClass('fx');
 	});
 	
 	/*$('#menu div > span').last().remove();*/

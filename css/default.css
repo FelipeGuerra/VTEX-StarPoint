@@ -257,6 +257,7 @@ body{font-family: 'Droid Sans', Arial, sans-serif;font-size:11px;background: url
 
 .collectionWrap{background:#FFFFFF;}
 .collectionWrap .wrapVitrine ul, .collectionWrap .prateleira ul {overflow: hidden;}
+.prateleira ul {width: 100%;}
 .collectionWrap .wrapVitrine ul li img, .collectionWrap .prateleira ul li img{width:160px;height:160px;}
 .collectionWrap .wrapVitrine ul li, .collectionWrap .prateleira ul li{float: left;margin-left: 15px;width:175px;text-align: center;}
 .collectionWrap .wrapVitrine ul li .data h3, .collectionWrap .prateleira ul li .data h3{font-size:12px;}
@@ -294,10 +295,10 @@ h1#title a span{}
 #header #contact li.last, ul#conta li.last{border:none;}
 
 #header #header_carrinho{background: none repeat scroll 0 0 black;float: right;height: 22px;width: 638px;margin-top:15px;margin-right:13px;}
-#header #search_cart, .header .searchWrapper{background: #000;float: left;margin: 2px;}
+#header #search_cart, .header .searchWrapper{background: #000;float: left;margin: 2px;width: 187px;}
 #search_cart label, #search_cart legend, #search_cart select, .header .searchWrapper label, .header .searchWrapper legend, .header .searchWrapper  select{display:none;}
 #search_cart .fulltext-search-box, .header .searchWrapper .fitext{background: none repeat scroll 0 0 #FFFFFF;border: medium none;float: left;padding: 1px 5px;width: 160px;font-size: 13px;height: 16px;}
-#search_cart .btn-buscar, .header .searchWrapper .fibutton{border: none;background: url(/arquivos/btn_search.png) no-repeat top center;display: block;text-indent: -9999px;width: 17px;height: 18px;float: left;cursor:pointer;padding:0;}
+#search_cart .btn-buscar, .header .searchWrapper .fibutton{border: none;background: url(/arquivos/btn_search.png) no-repeat top center;display: block;text-indent: -9999px;width: 17px;height: 18px;float: left;cursor:pointer;padding:0;line-height: 0;font-size: 0;}
 ul#conta{float: right;margin-top: 4px;}
 ul#conta li{border-right: 1px solid #FFFFFF;display: inline;padding: 0 5px;float:left;}
 ul#conta li.first{border-left: 1px solid #FFFFFF;}
@@ -315,18 +316,22 @@ ul#conta a:hover{text-decoration:underline;}
 
 /* ______ MENU ______ */
 
-#menu{float: right;height: 25px;margin: 10px 13px 0 0;overflow:hidden;}
+#menu{float: right;height: 25px;margin: 10px 13px 0 0;overflow: hidden;width: 650px;overflow: hidden;}
 #menu .brandFilter {display: none!important;}
 #menu a{color:#000;}
 #menu .separator {width: 1px;height: 15px;background: black;float: left;margin: 5px 2px 0 2px;}
-#menu h3 {background: url(/arquivos/bg_h3_menu.jpg) repeat 0 0px;float: left;}
+#menu h3 {background: url(/arquivos/bg_h3_menu.jpg) repeat 0 0px;float: left;height: 26px;overflow: hidden;}
 #menu h3:hover a {color: #FC0;}
 #menu h3 a{font-size:13px;/*font-weight:bold;*/float:left;padding:6px 12px 5px 12px;text-decoration:none;}
 #menu h3 > a{position:relative;clear:both;top:0;}
+#menu h3 > a.fx{*display:none;}
 #menu h3 a:hover{text-decoration:none;}
 #menu h3:hover ul li a {color: white;}
 #menu h3:hover ul li a:hover{text-decoration:underline;}
-#menu ul {background: black;display: none;margin: 25px 0 0 0;padding: 5px;position: absolute;z-index: 100;}
+#menu ul {background: black;display: none;margin: 25px 0 0 0;padding: 5px;position: absolute;z-index: 10000;}
+#menu ul {*margin-left:-90px;*max-width: 380px;}
+#menu ul { max-width /*\**/: 380px\9 }
+:root #menu ul { max-width:none \0/IE9; }  /* IE9 + IE10pp4 */
 #menu ul a {display: block;font-size: 11px;padding: 0 10px 0;position: relative;color: white;font-weight: normal;text-decoration:none;}
 #menu h3:hover a:hover {color: #FC0;}
 #menu h3:hover > ul {display:block;}
@@ -348,9 +353,9 @@ ul#conta a:hover{text-decoration:underline;}
 .carousel{width: 982px;height: 64px;margin: 0 auto;position: relative;clear:both;margin:10px 0;}
 .carousel .carousel_container{width: 888px;height: 64px;margin: 0 auto;overflow: hidden;position: relative;float:left;}
 .carousel .portfolio_items{height: 64px;width: 1980px;background:#FFF;}
-.carousel .portfolio_items div{width: 148px;height: 64px;display: block;float: left;position: relative;}
-.carousel .portfolio_items div a{width: 148px;height: 64px;background: #FFF;display: block;color: #fff;}
-.carousel .portfolio_items div img{cursor:pointer;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;-o-transition: .2s ease-out;}
+.carousel .portfolio_items div {width: 177px;height: 60px;display: block;float: left;position: relative;}
+.carousel .portfolio_items div a{width: 177px;height: 60px;background: #FFF;display: block;color: #fff;}
+.carousel .portfolio_items div img{cursor:pointer;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;-o-transition: .2s ease-out;margin: 10px 7px;}
 .carousel .portfolio_items div img:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);-moz-opacity:1.0;-khtml-opacity: 1.0;opacity: 1.0;}
 .carousel .carousel_right, .carousel_left{width: 47px;height: 64px;display: block;text-indent: -9999px;cursor:pointer;z-index:20;-webkit-transition: .2s ease-out;-moz-transition: .2s ease-out;transition: .2s ease-out;-o-transition: .2s ease-out;}
 .carousel .carousel_left{background: url(btn_jcarousel.png) no-repeat 0 0;float:left;}
@@ -550,21 +555,101 @@ ul#conta a:hover{text-decoration:underline;}
 
 .produto .container .box .brandName, .produto .container .box h1{width:100%;text-align: center;}
 .produto .container .box h1{font-size: 16px;margin-bottom: 25px;text-transform: uppercase;}
-.produto #productPrice{padding: 10px;width: 306px;overflow: hidden;background: #ebebeb;float: left;}
+.produto #productPrice {padding: 10px;width: 306px;overflow: hidden;background: #ebebeb;float: left;min-height: 45px;position: relative;}
 .produto .buy-button{height: 42px;background: url(/arquivos/btn-buy.jpg) no-repeat center #4ccc00;text-indent: -9999px;display:block;clear:both;}
 
 .produto .all .container .box .box-banner{padding: 4px 0;background: #ebebeb;float: right;}
 .produto .container .prateleira{padding: 10px;width: auto;height: auto;overflow: hidden;}
 
-.produto #line_preco {margin-bottom: 10px;float:left;background:url(/arquivos/banner-fretegratis.jpg) no-repeat right top;width: 100%;}
-.produto #line_preco .productReference{clear: both;color: #666666;float: right;}
-.produto .descricao-preco em{float:left;}
+.produto #line_preco {margin-bottom: 10px;float: left;background: url(/arquivos/banner-fretegratis.jpg) no-repeat right top;width: 100%;min-height: 67px;}
+.produto #line_preco .productReference {clear: both;color: #666666;position: absolute;right: 10px;top: 10px;}
+
+
+.topic li.specification {margin: 5px;}
+
+ul.topic .skuList input {margin-left:-9999em}
+ul.topic {overflow:hidden}
+
+ul.topic .skuList label {background: #FFFFFF;border: 1px solid #ccc;color: #777777;display: block;float: left;padding: 2px;text-align: center;
+margin: 0 5px 5px;width: 38px;font-size: 10px;}
+ul.topic .skuList label:hover {background: #666;border-color: #666;color: #fff;}
+ul.topic .skuList label.item_unavaliable {border-color:#DEDEDE; opacity:0.3}
+ul.topic .skuList label.item_unavaliable:hover {}
+ul.topic .skuList label:hover, .sku-picked {cursor:pointer}
+
+.sku-picked {background: #666!important;color: #fff!important;}
+
+/*ul.Cores .skuList label {width: 60px;}*/
+
+.produto #selection {background: #ebebeb;float: left;width: 490px;padding: 0px 10px;margin-bottom: 10px;}
+
+.produto .descricao-preco em {float: left;clear: both;}
 .produto .descricao-preco em.valor-dividido{clear:both;}
 .produto .descricao-preco em.economia-de, .produto .descricao-preco em.valor-de{display: none;}
 .produto .descricao-preco em.valor-por strong{font-size: 16px;color: #bababa;}
 .produto .descricao-preco em.valor-dividido strong{font-size: 22px;color: #646464;}
 
 .produto .box-twitter, .produto .box-pinterest, .produto .box-facebook, .produto .box-gPlus{width: 127px;height: auto;overflow: hidden;float: left;}
+
+/** PRODUTO BRANDS **/
+
+.brandName a {
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: #ccc;
+	margin-bottom: 5px;
+	text-indent: -99999px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.brandName a....lost {background:url(/arquivos/lost.gif) no-repeat top center;}
+.brandName a.billabong {background:url(/arquivos/billabong.gif) no-repeat top center;}
+.brandName a.bullys {background:url(/arquivos/bullys.gif) no-repeat top center;}
+.brandName a.creatures {background:url(/arquivos/creatures.gif) no-repeat top center;}
+.brandName a.curtir-a-vida {background:url(/arquivos/curtir-a-vida.gif) no-repeat top center;}
+.brandName a.dakine {background:url(/arquivos/dakine.gif) no-repeat top center;}
+.brandName a.dragon {background:url(/arquivos/dragon.gif) no-repeat top center;}
+.brandName a.drop-boards {background:url(/arquivos/drop-boards.gif) no-repeat top center;}
+.brandName a.element {background:url(/arquivos/element.gif) no-repeat top center;}
+.brandName a.ecco-case {background:url(/arquivos/ecco-case.gif) no-repeat top center;}
+.brandName a.xtrax {background:url(/arquivos/xtrax.gif) no-repeat top center;}
+.brandName a.x-track {background:url(/arquivos/x-track.gif) no-repeat top center;}
+.brandName a.wet-dreams {background:url(/arquivos/wet-dreams.gif) no-repeat top center;}
+.brandName a.urgh {background:url(/arquivos/urgh.gif) no-repeat top center;}
+.brandName a.vans {background:url(/arquivos/vans.gif) no-repeat top center;}
+.brandName a.ted-shreds {background:url(/arquivos/ted-shreds.gif) no-repeat top center;}
+.brandName a.star-point {background:url(/arquivos/star-point.gif) no-repeat top center;}
+.brandName a.skull-candy {background:url(/arquivos/skull-candy.gif) no-repeat top center;}
+.brandName a.shapers-fins {background:url(/arquivos/shapers-fins.gif) no-repeat top center;}
+.brandName a.sex-wax {background:url(/arquivos/sex-wax.gif) no-repeat top center;}
+.brandName a.sector-9 {background:url(/arquivos/sector-9.gif) no-repeat top center;}
+.brandName a.rvca {background:url(/arquivos/rvca.gif) no-repeat top center;}
+.brandName a.rip-curl {background:url(/arquivos/rip-curl.gif) no-repeat top center;}
+.brandName a.pro-tec {background:url(/arquivos/pro-tec.gif) no-repeat top center;}
+.brandName a.pro-lite {background:url(/arquivos/pro-lite.gif) no-repeat top center;}
+.brandName a.ogio {background:url(/arquivos/ogio.gif) no-repeat top center;}
+.brandName a.nixon {background:url(/arquivos/nixon.gif) no-repeat top center;}
+.brandName a.nike {background:url(/arquivos/nike.gif) no-repeat top center;}
+.brandName a.new-era {background:url(/arquivos/new-era.gif) no-repeat top center;}
+.brandName a.mormaii {background:url(/arquivos/mormaii.gif) no-repeat top center;}
+.brandName a.mcd {background:url(/arquivos/mcd.gif) no-repeat top center;}
+.brandName a.koston {background:url(/arquivos/koston.gif) no-repeat top center;}
+.brandName a.komunity {background:url(/arquivos/komunity.gif) no-repeat top center;}
+.brandName a.kanu-lock {background:url(/arquivos/kanu-lock.gif) no-repeat top center;}
+.brandName a.irons-brothers {background:url(/arquivos/irons-brothers.gif) no-repeat top center;}
+.brandName a.hurley {background:url(/arquivos/hurley.gif) no-repeat top center;}
+.brandName a.hangten {background:url(/arquivos/hangten.gif) no-repeat top center;}
+.brandName a.go-pro {background:url(/arquivos/gopro.gif) no-repeat top center;}
+.brandName a.goldcoast {background:url(/arquivos/goldcoast.gif) no-repeat top center;}
+.brandName a.globe {background:url(/arquivos/globe.gif) no-repeat top center;}
+.brandName a.global {background:url(/arquivos/global.gif) no-repeat top center;}
+.brandName a.g-form {background:url(/arquivos/g-form.gif) no-repeat top center;}
+.brandName a.freestyle {background:url(/arquivos/freestyle.gif) no-repeat top center;}
+.brandName a.fluir {background:url(/arquivos/fluir.gif) no-repeat top center;}
+.brandName a.fcs {background:url(/arquivos/fcs.gif) no-repeat top center;}
+.brandName a.evoke {background:url(/arquivos/evoke.gif) no-repeat top center;}
 
 /*.produto .line #tabs, .produto .line #tabs li{display: block;width: auto;height: auto;}
 .produto .line #tabs{margin-top: 10px;clear:both;z-index: 5;height: 21px;}
@@ -580,11 +665,11 @@ ul#conta a:hover{text-decoration:underline;}
 .ui-slider-tabs{clear:both;float:left;margin-top:10px;width:100%;}
 .ui-slider-tabs-list-wrapper{position: relative;width: 100%;margin: 0 0 -1px 0;z-index: 50;}
 .ui-slider-tabs-list-wrapper.bottom{margin: -1px 0 0 0;}
-.ui-slider-tabs-list-container{overflow: hidden;margin:0 !important;}
+.ui-slider-tabs-list-container{overflow: hidden;margin:0 !important;height: 23px;}
 .ui-slider-tabs-list{padding: 0;margin: 0 0 0 0;list-style: none;width:100% !important;}
 .ui-slider-tabs-list li{display: inline-block;border-bottom: 1px solid #cfcfcf;border-right: 1px solid #cfcfcf;border-top: 1px solid #cfcfcf;margin: 0;font-size: 11px;background: #ebebeb;cursor: pointer;}
 .ui-slider-tabs-list li strong{font-weight:normal;}
-.ui-slider-tabs-list li a{display: block;text-decoration: none;color: #333333;margin: 0;height:auto !important;padding: 2px 5px;}
+.ui-slider-tabs-list li a{display: block;text-decoration: none;color: #333333;margin: 0;height:auto !important;padding: 2px 5px 0;float: left;}
 .ui-slider-tabs-list li a:hover{color: #000;}
 .ui-slider-tabs-list li.avalie.selected{background:#ebebeb;border-bottom:1px solid #CFCFCF;}
 .ui-slider-tabs-list li.selected{border-bottom-color: #fff;border-top-color: #cfcfcf;background: #FFFFFF;color:#000;}
@@ -946,7 +1031,7 @@ ul.Cor .skuList label:hover, .sku-picked {cursor:pointer}
 .footer{font-family: 'Droid Sans', sans-serif;background: url(/arquivos/footer_fundo.jpg) repeat-x top left;height:396px;width:100%;margin-top:20px;clear:both;}
 #barra_info.barrabottom{color: #FFFFFF;font-size: 11px;/*font-weight: bold;*/padding-top: 4px;text-align: center;width: 982px;height:17px;}
 .footer #containerFooter{width:982px;padding-top:5px;}
-.footer #history, .footer .history{float:left;width:715px;margin-left:32px;font-size:11px;color:#000;text-transform:uppercase;overflow:hidden;height:101px;position:relative;}
+.footer #history, .footer .history {float: left;width: 715px;margin-left: 32px;font-size: 11px;color: #000;text-transform: uppercase;overflow: hidden;height: 95px;position: relative;}
 .footer #history #HistoricoVazio, .footer .history #HistoricoVazio{margin-top:5px;}
 .footer #history h3, .footer .history h3{font-size:13px;margin-bottom:15px;}
 .footer #history h4, .footer .history h4{font-weight:bold;font-size:11px;}
@@ -971,9 +1056,9 @@ ul.Cor .skuList label:hover, .sku-picked {cursor:pointer}
 .footer #footerServices ul li, .footer #footerInstitutional ul li{text-transform:uppercase;font-size:11px;color:#000;margin:2px 0;float:left;clear:both;}
 .footer #footerInstitutional a, .footer #footerServices a{color:#000;text-decoration:none;text-transform:uppercase;font-size:11px;}
 .footer #footerInstitutional a:hover, .footer #footerServices a:hover{text-decoration:underline;}
-.footer #footerVipClub{float:left;margin-right:55px;}
+.footer #footerVipClub{float:left;margin-right:55px;width: 195px;}
 .footer #footerVipClub div{background: url(/arquivos/sprite_footer.png) no-repeat scroll right top transparent;height: 50px;width: 195px;margin-top:3px;}
-.footer #footerPagamento{float:left;}
+.footer #footerPagamento{float:left;width: 260px;}
 .footer #footerPagamento div{background: url(/arquivos/sprite_footer.png) no-repeat scroll left bottom transparent;height: 97px;width: 260px;margin-top:15px;}
 .footer #containerCredits{clear: both;float: left;margin-top: 17px;width: 100%;height:39px;}
 .footer #footerCredits{position: relative;}
@@ -989,3 +1074,22 @@ ul.Cor .skuList label:hover, .sku-picked {cursor:pointer}
 .ui-autocomplete li:hover {background: #f0f0f0;}
 .ui-autocomplete li img {float: left;}
 .ui-autocomplete li a {display: block;outline: none;min-height: 26px;}
+
+/******HOTSITES******/
+
+#bgHotSite img {position: fixed;width: 100%;height: 100%;z-index: -10;}
+.home #bgLoja,
+.departamento #bgLoja,
+.categoria #bgLoja,
+.resultado-busca #bgLoja {background: none;position: fixed;z-index: -1;width: 100%;height: 100%;}
+
+.departamento.marcas #bgLoja {background: url(/arquivos/ponto.png) repeat top center;position: fixed;z-index: -1;width: 100%;height: 100%;}
+.departamento.marcas #content {background: none;}
+.departamento.marcas #topBanners {background: #fff;}
+.departamento.marcas .pager.top {margin-bottom: 20px;}
+.departamento.marcas #collections {margin: 10px 0;}
+.departamento.marcas .collectionWrap {background: #FFFFFF;padding-bottom: 40px;}
+.departamento.marcas #sideBar.clear {margin-top: 0;}
+.departamento.marcas #sideBarAll .menu-departamento > h3, .departamento.marcas #sideBarAll .menu-departamento > ul {display: none;}
+
+.institucional #content {float: left;width: 773px;margin-top: 10px;padding: 10px;background: #fff;}

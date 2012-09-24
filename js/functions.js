@@ -1,4 +1,14 @@
-$(document).ready(function() {
+﻿$(document).ready(function() {
+	if ($('#bgHotSite img').length > 0){
+		$('#bgLoja').css('background', 'url(/arquivos/ponto.png) repeat top center');
+	};
+	if($('body').hasClass('produto')){
+		var slider = $("div#mySliderTabs").sliderTabs({
+			position: "top",
+			transitionSpeed: 350,
+			tabHeight: 19
+		});
+	}
 	
 	/*$("legend").each(function() {
 		var text = $(this).text();
@@ -34,10 +44,10 @@ $(document).ready(function() {
 		});
 	});
 	//$('#carrinho-barra select')
-	$('#carrinho-barra .seta2').click(function(){
-		$('#carrinho-barra .seta2').fadeOut(250);
+	$('#carrinho-barra #seta2').click(function(){
+		$('#carrinho-barra #seta2').fadeOut(250);
 		$('#carrinho-barra').animate({"top": "+=35px"}, 500, 'linear' ,function(){
-			$('#carrinho-barra :not(.seta2,script,legend,label,select)').fadeIn('slow');
+			$('#carrinho-barra :not(#seta2,script,legend,label,select)').fadeIn('slow');
 			$('#carrinho-barra #carrinho #menu2').hide();
 		});
 	});
@@ -111,4 +121,18 @@ $(document).ready(function() {
 	
 	$('.produto .productReference').prependTo('.produto .descricao-preco');
 	
+	if($.browser.msie && parseInt($.browser.version, 10) == 7) {
+		//corrige z-index ie7//
+		$(function() {
+			var zIndexNumber = 1000;
+			$('div').each(function() {
+				$(this).css('zIndex', zIndexNumber);
+				zIndexNumber -= 10;
+			});
+		});
+	}
+});
+
+$(document).ajaxStop(function(){
+	$('.preco-a-vista').prependTo('.descricao-preco');
 });
