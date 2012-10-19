@@ -1,12 +1,20 @@
 ﻿$(document).ready(function() {
+
+	if($(".produto .buy-button").attr("href") === "javascript:alert('')"){
+		$(".produto .buy-button").attr("href", "javascript:alert('Escolha um tamanho.')");
+	};
+		
+	$('<form action="http://www4.directtalk.com.br/chat/?idd=77A3000609E89002219B&origem=StarPoint" method="post" target="janela" id="auto">').appendTo('#header #contact')
 	if ($('#bgHotSite img').length > 0){
+		$('#bgLoja').css('background', 'url(/arquivos/ponto.png) repeat top center');
+	};
+	if ($('#bgSite img').length > 0){
 		$('#bgLoja').css('background', 'url(/arquivos/ponto.png) repeat top center');
 	};
 	if($('body').hasClass('produto')){
 		var slider = $("div#mySliderTabs").sliderTabs({
 			position: "top",
-			transitionSpeed: 350,
-			tabHeight: 19
+			transitionSpeed: 350
 		});
 	}
 	
@@ -134,5 +142,43 @@
 });
 
 $(document).ajaxStop(function(){
+	
+	$('.novidades > a').attr('href', '/busca/?fq=H:136');
+	$('.outlet > a').attr('href', '/busca/?fq=H:135');
+	
+	lnkCanonical = $('link[rel="canonical"]').attr('href').split('/');
+	bv = lnkCanonical[lnkCanonical.length-1];
+
+	if(bv == "?fq=H:136"){
+		$('.resultado-busca #topBanners #bannerNovidades').css('display', 'block');
+	}else if (bv == "?fq=H:135"){
+		$('.resultado-busca #topBanners #bannerOutlet').css('display', 'block');
+	}else{
+		$('.resultado-busca #topBanners #bannerNovidades').css('display', 'none');
+		$('.resultado-busca #topBanners #bannerOutlet').css('display', 'none');
+	};
+	
+	if($('.container.box.complete_seu_look #wrapSimilares div').length === 0){
+	   $('.container.box.complete_seu_look').css('display', 'none');
+	};
+	
+	if($('.container.box.aproveite #divCompreJunto div').length === 0){
+	   $('.container.box.aproveite').css('display', 'none');
+	};
+
+	$('.produto .bread-crumb a[title="Starpoint"]').text('HOME');
+	$('#sideBar.filtro .menu-navegue a.search-navigator-tab').click();
+
+	/*if($('#banner2 #slides ul li').length === 0){
+		$('#bannerDefault').show();
+	}*/
+	
+	
+	if($('#tab_video iframe').length > 0 ){
+		$('.ui-slider-tabs-list li.video a').click();
+	}
+	
 	$('.preco-a-vista').prependTo('.descricao-preco');
+	
+    $(".brand.---lost").css('background', 'url(/arquivos/lost.gif) no-repeat top center');
 });

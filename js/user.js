@@ -1,5 +1,10 @@
 $(document).ready(function() {
+	$('<form action="http://www4.directtalk.com.br/chat/?idd=77A3000609E89002219B&origem=StarPoint" method="post" target="janela" id="auto">').appendTo('#header #contact')
 	$('head').append('<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" />')
+	
+	if ($('#bgSite img').length > 0){
+		$('#bgLoja').css('background', 'url(/arquivos/ponto.png) repeat top center');
+	};
 	
 	$("body.checkout .searchWrapper:last, body.minha-conta .searchWrapper:last, body.fale-conosco .searchWrapper:last, body.sku .searchWrapper:last").addClass('bottomSearchWrapper');
 	if ($("body").attr("class") == "carrinho"){
@@ -63,4 +68,11 @@ $(document).ready(function() {
 	
 	$("body.editar-conta fieldset div.grp").first().addClass('apelido');
 	
+});
+
+$(document).ajaxStop(function(){
+	
+	$('.menu-novidades > a').attr('href', '/busca/?fq=H:136');
+	$('.menu-outlet > a').attr('href', '/busca/?fq=H:135');
+
 });
