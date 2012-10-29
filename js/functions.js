@@ -139,9 +139,22 @@
 			});
 		});
 	}
+	
 });
 
 $(document).ajaxStop(function(){
+	
+	/*if(('.topic.COR .sku-picked').length != 1){
+		$('.topic.COR').prependTo('#selection');
+		$('#espec_1_opcao_0').click();
+		$('#espec_1_opcao_0').change();
+	}*/
+	
+	if(!$('.topic.COR .sku-picked').size()){
+	    $('.topic.COR').prependTo('#selection');
+		$('#espec_1_opcao_0').click();
+		$('#espec_1_opcao_0').change();
+	}
 	
 	$('.novidades > a').attr('href', '/busca/?fq=H:136');
 	$('.outlet > a').attr('href', '/busca/?fq=H:135');

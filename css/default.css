@@ -421,6 +421,7 @@ ul#conta a:hover{text-decoration:underline;}
 .produto #line_preco {margin-bottom: 10px;float: left;background: url(/arquivos/banner-fretegratis.jpg) no-repeat right top;width: 100%;min-height: 67px;}
 .produto #line_preco .productReference {clear: both;color: #666666;position: absolute;right: 10px;top: 10px;}
 
+.produto .prateleira > h2 {display: none;}
 
 .topic li.specification {margin: 5px;}
 
@@ -595,6 +596,7 @@ ul.topic .skuList label:hover, .sku-picked {cursor:pointer}
 
 .endereco-compra .endereco h2{display:none;}
 .checkout.endereco-compra h2{display:block !important;}
+.endereco-compra .endereco > h2 {display: none!important;}
 .endereco-compra .lista-endereco{margin-bottom:10px;}
 .endereco-compra .lista-endereco legend{display:none;}
 .endereco-compra ul.address-list{overflow: hidden;width: 100%;}
@@ -625,6 +627,8 @@ ul.topic .skuList label:hover, .sku-picked {cursor:pointer}
 .frete .ui-buttonset{margin-top:10px;float:left;}
 .frete fieldset.bts ul{float:right;}
 .frete fieldset.bts ul li{display:inline;}
+.frete .tipoPagamento label {margin: 10px;float: left;}
+.frete .tipoPagamento label input {margin-right: 10px;}
 
 .forma-pagamento .dados-pagamento{float:left;width:100%;}
 .forma-pagamento .dados-pagamento h3, .forma-pagamento .pagamento p.tit strong{font-weight:bold;font-size:14px;}
@@ -672,7 +676,7 @@ ul.topic .skuList label:hover, .sku-picked {cursor:pointer}
 .finaliza-compra .info {display: block;margin: 10px auto;}
 
 .finaliza-compra .lnkBoleto a {background: #000;color: #fcd300;padding: 5px 10px;display: block;width: 255px;margin: 10px auto;}
-.finaliza-compra .continuar-comprando {	float: right;margin: 20px 0;}
+.finaliza-compra .continuar-comprando {margin: 20px 0;float: left;margin-left: 195px;}
 .finaliza-compra .continuar-comprando a {display: block;}
 .finaliza-compra .banner {float: left;width: 100%;text-align: center;margin-top: 20px;}
 
@@ -1110,12 +1114,15 @@ ul.rating {
 .preload {
     display: none;
 }
+
 .jqZoomWindow {
     background-color: #FFFFFF;
     border: 1px solid #999999;
-    height: 460px !important;
+    height: 502px !important;
     position: relative;
-    width: 520px !important;
+    width: 420px !important;
+    margin-left: -431px !important;
+    z-index:1!important;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------*/

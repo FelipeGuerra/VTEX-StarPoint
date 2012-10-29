@@ -71,7 +71,7 @@ $(document).ready(function() {
 });
 
 $(document).ajaxStop(function(){
-	
+	$('.carrinho .continuar-comprando a').attr('href', '/');
 	$('.menu-novidades > a').attr('href', '/busca/?fq=H:136');
 	$('.menu-outlet > a').attr('href', '/busca/?fq=H:135');
 
