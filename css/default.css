@@ -271,6 +271,9 @@ ul#conta a:hover{text-decoration:underline;}
 #sideBar.filtro .menu-navegue{margin-bottom:10px;overflow:hidden;}
 #sideBar.filtro .menu-navegue a{float:left;clear:both;}
 
+#lojasEsperiais {display: none;}
+
+
 .refino-marca div > label {float: left;clear: both;margin: 5px 0;}
 .refino-marca div > label input {margin-right: 5px;}
 /* ______ LOGIN ______ */
@@ -416,12 +419,26 @@ ul#conta a:hover{text-decoration:underline;}
 .produto .buy-button{height: 42px;background: url(/arquivos/btn-buy.jpg) no-repeat top left;text-indent: -9999px;display:block;clear:both;}
 .produto .unavailable-button {position: absolute;top: 118px;left: 25px;font-size: 24px;}
 .produto .all .container .box .box-banner{padding: 4px 0;background: #ebebeb;float: right;}
-.produto .container .prateleira{padding: 10px;width: auto;height: auto;overflow: hidden;}
+.produto .container .prateleira{width: auto;height: auto;overflow: hidden;}
+
+.produto .prateleira > h2 {display: none;}
+
+.produto .prateleira ul {width: 100%;}
+
+.produto .prateleira ul li{float: left;margin-left: 15px;width:175px;height: 300px;text-align: center;}
+.produto .prateleira ul li .data h3{font-size:12px;}
+.produto .prateleira ul li .data h3 a{padding:1px 3px;text-decoration:none;color:#000000;font-size:12px;font-weight:bold;text-transform:uppercase;}
+
+.produto .prateleira ul li .data .quickView, .produto .prateleira ul li .data .category, .produto .prateleira ul li .data .quickView, .produto .prateleira ul li .data .category{	display:none;}
+.produto .prateleira ul li .data .price a{color:#000;text-decoration:none;}
+.produto .prateleira ul li .data #wrap_prices, .produto .prateleira ul li .data .price{text-transform:uppercase;font-size:12px;margin-top:5px;}
+.produto .prateleira ul li .data #wrap_prices .oldPrice, .produto .prateleira ul li .data .price .oldPrice{text-decoration:line-through;}
+.produto .prateleira .newPrice, .produto .prateleira .installment, .produto .prateleira .price .newPrice, .produto .prateleira .price .installment{display:block;clear:both;}
+.formUserComments .footer {display: none;}
 
 .produto #line_preco {margin-bottom: 10px;float: left;background: url(/arquivos/banner-fretegratis.jpg) no-repeat right top;width: 100%;min-height: 67px;}
 .produto #line_preco .productReference {clear: both;color: #666666;position: absolute;right: 10px;top: 10px;}
 
-.produto .prateleira > h2 {display: none;}
 
 .topic li.specification {margin: 5px;}
 
@@ -437,6 +454,14 @@ ul.topic .skuList label:hover, .sku-picked {cursor:pointer}
 
 .sku-picked {background: #666!important;color: #fff!important;}
 
+.topic.COR li {float: left;}
+.topic.COR .specification:after{content: ": ";}
+.topic.COR .select.skuList label {background: none!important;border: none!important;color: #000!important;font-size: 12px;padding: 0;line-height: 2;cursor: auto;width: auto;}
+.topic.COR .select.skuList input {margin: 0;visibility: hidden;}
+.topic.COR {float: left;}
+#referencia {float: left;margin-top: 6px;width: 300px;}
+.topic.TAMANHOS {float: left;width: 100%;clear: both;}
+#referencia span {float: left;margin-right: 5px;}	
 /*ul.Cores .skuList label {width: 60px;}*/
 
 .produto #selection {background: #ebebeb;float: left;width: 490px;padding: 0px 10px;margin-bottom: 10px;}
@@ -444,6 +469,8 @@ ul.topic .skuList label:hover, .sku-picked {cursor:pointer}
 .produto .descricao-preco em {float: left;clear: both;}
 .produto .descricao-preco em.valor-dividido{clear:both;}
 .produto .descricao-preco em.economia-de, .produto .descricao-preco em.valor-de{display: none;}
+.produto .valor-de .skuListPrice {text-decoration: line-through;}
+.produto .economia-de {float: left;clear: both;}
 .produto .descricao-preco em.valor-por strong{font-size: 16px;color: #000;}
 .produto .descricao-preco em.valor-dividido strong{font-size: 22px;color: #646464;}
 
@@ -512,6 +539,11 @@ ul.topic .skuList label:hover, .sku-picked {cursor:pointer}
 .brandName a.fcs {background:url(/arquivos/fcs.gif) no-repeat top center;}
 .brandName a.evoke {background:url(/arquivos/evoke.gif) no-repeat top center;}
 .brandName a.spitfire {background:url(/arquivos/spitfire.gif) no-repeat top center;}
+.brandName a.agace {background:url(/arquivos/agace.gif) no-repeat top center;}
+.brandName a.crail {background:url(/arquivos/crail.gif) no-repeat top center;}
+.brandName a.hardply {background:url(/arquivos/hardply.gif) no-repeat top center;}
+.brandName a.moog {background:url(/arquivos/moog.gif) no-repeat top center;}
+.brandName a.types {background:url(/arquivos/types.gif) no-repeat top center;}
 
 
 .ui-slider-tabs{clear:both;float:left;margin-top:10px;width:100%;}
@@ -853,10 +885,10 @@ ul.topic .skuList label:hover, .sku-picked {cursor:pointer}
 .footer #footerInstitutional a, .footer #footerServices a{color:#000;text-decoration:none;text-transform:uppercase;font-size:11px;}
 .footer #footerInstitutional a:hover, .footer #footerServices a:hover{text-decoration:underline;}
 .footer #footerVipClub {float: left;margin-right: 35px;width: 195px;position: relative;}
-.footer #footerVipClub div.ebitFooter {position: absolute;left: 0;top: 20px;}
-.footer #footerVipClub div.comodoFooter {background: url(/arquivos/sprite_footer.png) no-repeat scroll right top transparent;height: 50px;width: 195px;margin-top: 5px;}
+.footer #footerVipClub div.ebitFooter {position: absolute;right: 0;top: 20px;}
+.footer #footerVipClub div.comodoFooter {background: url(/arquivos/logo_digicert.jpg) no-repeat scroll right top transparent;height: 61px;width: 80px;padding: 0;margin: 5px 0 0 0;}
 .footer #footerPagamento{float:left;width: 324px;}
-.footer #footerPagamento div {background: url('/arquivos/sprite_footer.png') no-repeat 0 -61px;height: 93px;width: 190px;margin-top: 15px;float: left;}
+.footer #footerPagamento div {background: url('/arquivos/footer_pagamento.jpg') no-repeat top left;height: 93px;width: 190px;margin-top: 15px;float: left;}
 .footer #containerCredits {clear: both;float: left;position: absolute;width: 982px;height: 39px;bottom: 58px;}
 .footer #footerCredits{position: relative;}
 .footer #footerCredits p {clear: both;float: left;margin-left: 36px;font-size: 10px;}
@@ -1355,5 +1387,3 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 	padding: 6px 15px;
 	text-decoration: none!important;
 }
-
-.formUserComments .footer {display: none;}

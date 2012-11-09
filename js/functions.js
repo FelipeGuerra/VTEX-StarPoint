@@ -127,8 +127,6 @@
 	
 	$('#search_cart, #cart, #conta, .searchWrapper:first').wrapAll('<div id="header_carrinho"></div>');
 	
-	$('.produto .productReference').prependTo('.produto .descricao-preco');
-	
 	if($.browser.msie && parseInt($.browser.version, 10) == 7) {
 		//corrige z-index ie7//
 		$(function() {
